@@ -56,7 +56,6 @@ server.get("/", (req, res) => {
     href="https://fonts.googleapis.com/css2?family=Monoton&family=Quicksand&display=swap"
     rel="stylesheet"
   />
-  <link rel="stylesheet" type="text/css" href="KaushanScript-Regular.otf">
   </head>
   <body style="margin:0px;font-family:Helvetica Neue" id="body">
   <div id="mountnode">${HTML}</div>
