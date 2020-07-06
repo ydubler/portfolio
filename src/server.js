@@ -47,7 +47,15 @@ server.get("/", (req, res) => {
   res.send(`
   <html>
   <head>
-  <title>SSR React App</title>
+  <title>Yuri Dubler's Portfolio</title>
+  <meta name="charset" content="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Yuri Dubler" />
+  <meta name="description" content="Yuri Dubler's Portfolio" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Monoton&family=Quicksand&display=swap"
+    rel="stylesheet"
+  />
   </head>
   <body style="margin:0px;font-family:Helvetica Neue" id="body">
   <div id="mountnode">${HTML}</div>
