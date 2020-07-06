@@ -1,0 +1,60 @@
+import React from "react";
+import ReactDOMServer from "react-dom/server";
+import express from "express";
+import "ignore-styles"; // to ignore CSS files when importing components
+
+// To use streams
+import fs from "fs";
+
+// React Components
+import App from "./app/App";
+
+// Stream ??
+//import { Stream } from "stream";
+
+// Get the port
+const PORT = process.env.PORT || 3000;
+
+// Create express server
+const server = express();
+
+// Set up server properties
+server.use("/dist", express.static("dist/"));
+
+// Tell express that when it sees /public make it translate go to the appropriate folder
+const pathToPublic = __dirname.substring(0, __dirname.length - 4) + "/public";
+server.use("/public", express.static(pathToPublic));
+
+// Send neccessary files server->client
+server.get("/public/images/:id", (req, res) => {
+  // log the activity to the server console
+  console.log('server.get("/public/images/:id") [html request]');
+
+  //res.sendFile(__dirname + "/public/" + req.params.id);
+  res.sendFile("/public/images/" + req.params.id);
+});
+
+// Getting "/experience"
+server.get("/", (req, res) => {
+  console.log("get request to /");
+
+  const HTML = ReactDOMServer.renderToString(
+    <>
+      <App />
+    </>
+  );
+
+  res.send(`
+  <html>
+  <head>
+  <title>SSR React App</title>
+  </head>
+  <body style="margin:0px;font-family:Helvetica Neue" id="body">
+  <div id="mountnode">${HTML}</div>
+  <script src="../dist/main.js"></script>
+  </body>
+  </html>
+  `);
+});
+
+server.listen(PORT, console.log("Server on."));
