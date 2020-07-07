@@ -7,6 +7,9 @@ function App() {
 
   return (
     <>
+      <div className="portfolio">
+        <div class="portfolio-text">Portfolio</div>
+      </div>
       <img src="/public/images/coffee1.jpg"></img>
       <div className="one font-lobster">{greeting}</div>
     </>

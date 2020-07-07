@@ -1,20 +1,21 @@
-.one {
-  color: white;
-  background-color: blue;
-  margin: 10px;
-  width: auto;
+.portfolio {
+  display: block;
+  width: 100%;
   height: auto;
-  display: inline-block;
+  text-align: center;
+  margin: 0px;
+  border: 0px;
+  background-color: #4985ff;
+}
+
+.portfolio-text {
+  padding-bottom: 20px;
+  padding-top: -10px;
+  font-family: "Lobster Two", cursive;
+  font-size: 100px;
+  color: white;
 }
 
 .font-lobster {
   font-family: "Lobster Two", cursive;
-}
-
-.font-baloo {
-  font-family: "Baloo Chettan 2", cursive;
-}
-
-.font-josefin {
-  font-family: "Josefin Sans", sans-serif;
 }
