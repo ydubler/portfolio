@@ -10,7 +10,11 @@ function App() {
       <div className="portfolio">
         <div class="portfolio-text">Portfolio</div>
       </div>
-      <img src="/public/images/coffee1.jpg"></img>
+      <div className="navbar">
+        <div class="navbar-option">WEB APPLICATIONS</div>
+        <div class="navbar-option">COMPONENTS</div>
+      </div>
+      {/* <img src="/public/images/coffee1.jpg"></img> */}
       <div className="one font-lobster">{greeting}</div>
     </>
   );

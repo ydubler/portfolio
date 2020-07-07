@@ -1,21 +1,46 @@
+body {
+  background-color: ivory;
+}
+
 .portfolio {
   display: block;
   width: 100%;
   height: auto;
   text-align: center;
-  margin: 0px;
-  border: 0px;
   background-color: #4985ff;
 }
 
 .portfolio-text {
   padding-bottom: 20px;
-  padding-top: -10px;
   font-family: "Lobster Two", cursive;
   font-size: 100px;
   color: white;
 }
 
+.navbar {
+  height: 20px;
+  margin: auto;
+  text-align: center;
+}
+
+.navbar-option {
+  display: inline-block;
+  height: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 2px tan solid;
+  border-radius: 10px;
+  font-family: "Fascinate Inline", cursive;
+  font-size: 20px;
+  color: orangered;
+}
+
 .font-lobster {
   font-family: "Lobster Two", cursive;
+}
+
+.fonts {
+  font-family: "Fascinate Inline", cursive;
+  font-family: "Lobster Two", cursive;
+  font-family: "Open Sans", sans-serif;
 }
