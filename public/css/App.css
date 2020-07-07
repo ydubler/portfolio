@@ -5,5 +5,16 @@
   width: auto;
   height: auto;
   display: inline-block;
-  font-family: "KaushanScript", cursive;
+}
+
+.font-lobster {
+  font-family: "Lobster Two", cursive;
+}
+
+.font-baloo {
+  font-family: "Baloo Chettan 2", cursive;
+}
+
+.font-josefin {
+  font-family: "Josefin Sans", sans-serif;
 }

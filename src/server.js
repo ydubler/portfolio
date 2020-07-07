@@ -34,6 +34,15 @@ server.get("/public/images/:id", (req, res) => {
   res.sendFile("/public/images/" + req.params.id);
 });
 
+// Send neccessary files server->client
+server.get("/public/fonts/:id", (req, res) => {
+  // log the activity to the server console
+  console.log('server.get("/public/fonts/:id") [html request]');
+
+  //res.sendFile(__dirname + "/public/" + req.params.id);
+  res.sendFile("/public/fonts/" + req.params.id);
+});
+
 // Getting "/experience"
 server.get("/", (req, res) => {
   console.log("get request to /");
@@ -52,10 +61,7 @@ server.get("/", (req, res) => {
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="author" content="Yuri Dubler" />
   <meta name="description" content="Yuri Dubler's Portfolio" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Monoton&family=Quicksand&display=swap"
-    rel="stylesheet"
-  />
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+Chettan+2&family=Josefin+Sans&family=Lobster+Two&display=swap" rel="stylesheet">
   </head>
   <body style="margin:0px;font-family:Helvetica Neue" id="body">
   <div id="mountnode">${HTML}</div>

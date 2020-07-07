@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <img src="/public/images/coffee1.jpg"></img>
-      <div className="one">{greeting}</div>
+      <div className="one font-lobster">{greeting}</div>
     </>
   );
 }
