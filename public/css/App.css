@@ -24,7 +24,7 @@ body {
   text-align: center;
 }
 
-.navbar-option {
+.navbar-option-browser {
   display: inline-block;
   margin: auto;
   width: 99%;
@@ -36,9 +36,21 @@ body {
   color: rgb(94, 81, 76);
 }
 
-.navbar-option:hover {
+.navbar-option-browser:hover {
   background-color: #4985ff;
   color: white;
+}
+
+.navbar-option-mobile {
+  display: inline-block;
+  margin: auto;
+  width: 99%;
+  border: 2px tan solid;
+  border-radius: 10px;
+  background-color: white;
+  font-family: "Fascinate Inline", cursive;
+  font-size: 40px;
+  color: rgb(94, 81, 76);
 }
 
 .navbar-option-opened {

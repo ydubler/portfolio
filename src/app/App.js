@@ -17,8 +17,12 @@ function App() {
         <div
           className={
             isWebAppsOpen
-              ? "navbar-option navbar-option-opened"
-              : "navbar-option"
+              ? isBrowser
+                ? "navbar-option-browser navbar-option-opened"
+                : "navbar-option-mobile navbar-option-opened"
+              : isBrowser
+              ? "navbar-option-browser"
+              : "navbar-option-mobile"
           }
           onClick={() => {
             isWebAppsOpen ? setWebAppsOpen(false) : setWebAppsOpen(true);
@@ -27,15 +31,17 @@ function App() {
           WEB APPLICATIONS
         </div>
         {isWebAppsOpen && (
-          <div className="navbar-option-dropdown">
-            GameStats (React/Node/PostgreSQL)
-          </div>
+          <div className="navbar-option-dropdown">React/Node/PostgreSQL</div>
         )}
         <div
           className={
             isComponentsOpen
-              ? "navbar-option navbar-option-opened"
-              : "navbar-option"
+              ? isBrowser
+                ? "navbar-option-browser navbar-option-opened"
+                : "navbar-option-mobile navbar-option-opened"
+              : isBrowser
+              ? "navbar-option-browser"
+              : "navbar-option-mobile"
           }
           onClick={() => {
             isComponentsOpen
