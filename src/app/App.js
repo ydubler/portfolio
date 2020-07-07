@@ -6,6 +6,7 @@ import {
   isMobile,
 } from "react-device-detect";
 import BrowserApp from "./browser/BrowserApp";
+import MobileApp from "./mobile/MobileApp";
 
 function App() {
   // State
@@ -17,12 +18,7 @@ function App() {
         <BrowserApp />
       </BrowserView>
       <MobileView>
-        <div className="navbar">
-          <div class="navbar-option-mobile">WEB APPLICATIONS</div>
-          <div class="navbar-option-mobile">COMPONENTS</div>
-        </div>
-        {/* <img src="/public/images/coffee1.jpg"></img> */}
-        <div className="one font-lobster">{greeting}</div>
+        <MobileApp />
       </MobileView>
     </>
   );

@@ -36,7 +36,7 @@ body {
   color: orangered;
 }
 
-.navbar-option-browser:hover {
+.navbar-option:hover {
   background-color: #4985ff;
   color: white;
 }
