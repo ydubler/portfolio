@@ -59,8 +59,42 @@ body {
 }
 
 .navbar-option-dropdown {
+  padding: 20px;
+  border: solid black 2px;
   background-color: ivory;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 30px;
+}
+
+.navbar-option-dropdown-title {
+  margin-bottom: 10px;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 30px;
+  text-decoration: underline;
+}
+
+.navbar-option-dropdown-techstack {
+  display: inline-block;
+  width: auto;
+  border: solid black 2px;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 5px;
+  text-align: center;
+  background-color: #4985ff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  color: white;
+}
+
+.navbar-option-dropdown-body {
+  display: inline-block;
+  padding: 10px;
+  margin: 10px;
+  background-color: rgb(255, 237, 203);
   text-align: left;
   font-family: "Open Sans", sans-serif;
-  font-size: 20px;
+  font-size: 16px;
 }

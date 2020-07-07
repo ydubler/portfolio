@@ -31,7 +31,16 @@ function App() {
           WEB APPLICATIONS
         </div>
         {isWebAppsOpen && (
-          <div className="navbar-option-dropdown">React/Node/PostgreSQL</div>
+          <div className="navbar-option-dropdown">
+            <div className="navbar-option-dropdown-title">GameStats</div>
+            <div className="navbar-option-dropdown-techstack">React</div>
+            <div className="navbar-option-dropdown-techstack">Node</div>
+            <div className="navbar-option-dropdown-techstack">PostgreSQL</div>
+            <div className="navbar-option-dropdown-body">
+              This web-application allows users to create a player, record
+              player statistics, and visualize player data.
+            </div>
+          </div>
         )}
         <div
           className={
@@ -53,7 +62,11 @@ function App() {
         </div>
         {isComponentsOpen && (
           <div className="navbar-option-dropdown">
-            Animated Navbar (React, SVG)
+            <br />
+            <div className="navbar-option-dropdown">
+              Animated Navbar (React, SVG)
+            </div>
+            <br />
           </div>
         )}
       </div>
