@@ -23,9 +23,22 @@ body {
   text-align: center;
 }
 
-.navbar-option {
+.navbar-option-browser {
   display: inline-block;
   height: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 2px tan solid;
+  border-radius: 10px;
+  font-family: "Fascinate Inline", cursive;
+  font-size: 20px;
+  color: orangered;
+}
+
+.navbar-option-mobile {
+  display: inline-block;
+  height: auto;
+  width: 100%;
   padding-left: 20px;
   padding-right: 20px;
   border: 2px tan solid;
