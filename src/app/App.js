@@ -32,15 +32,21 @@ function App() {
         </div>
         {isWebAppsOpen && (
           <div className="navbar-option-dropdown">
-            <div className="navbar-option-dropdown-title">
-              <a href="#">GameStats</a>
-            </div>
+            <div className="navbar-option-dropdown-title">Game Stats</div>
             <div className="navbar-option-dropdown-techstack">React</div>
             <div className="navbar-option-dropdown-techstack">Node</div>
+            <div className="navbar-option-dropdown-techstack">Express</div>
             <div className="navbar-option-dropdown-techstack">PostgreSQL</div>
+            <div className="navbar-option-dropdown-techstack">Heroku</div>
+            <br />
             <div className="navbar-option-dropdown-body">
               This web-application allows users to create a player, record
               player statistics, and visualize player data.
+            </div>
+            <div className="navbar-option-dropdown-link">
+              <a href="https://yd-game-stats.herokuapp.com/" target="_blank">
+                https://yd-game-stats.herokuapp.com/
+              </a>
             </div>
           </div>
         )}
