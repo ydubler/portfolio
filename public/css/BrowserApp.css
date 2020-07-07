@@ -1,0 +1,52 @@
+body {
+  background-color: white;
+}
+
+.portfolio {
+  display: block;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  background-color: #4985ff;
+}
+
+.portfolio-text {
+  padding-bottom: 20px;
+  font-family: "Lobster Two", cursive;
+  font-size: 100px;
+  color: white;
+}
+
+.navbar {
+  width: auto;
+  height: auto;
+  margin: auto;
+  text-align: center;
+}
+
+.navbar-option {
+  display: inline-block;
+  height: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  font-family: "Fascinate Inline", cursive;
+  font-size: 20px;
+  color: orangered;
+}
+
+.navbar-option-browser:hover {
+  background-color: #4985ff;
+  color: white;
+}
+
+.font-lobster {
+  font-family: "Lobster Two", cursive;
+}
+
+.fonts {
+  font-family: "Fascinate Inline", cursive;
+  font-family: "Lobster Two", cursive;
+  font-family: "Open Sans", sans-serif;
+}

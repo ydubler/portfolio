@@ -5,7 +5,7 @@ import {
   isBrowser,
   isMobile,
 } from "react-device-detect";
-import "../../public/css/App.css"; // CSS
+import BrowserApp from "./browser/BrowserApp";
 
 function App() {
   // State
@@ -14,20 +14,9 @@ function App() {
   return (
     <>
       <BrowserView>
-        <div className="portfolio">
-          <div class="portfolio-text">Portfolio</div>
-        </div>
-        <div className="navbar">
-          <div class="navbar-option-browser">WEB APPLICATIONS</div>
-          <div class="navbar-option-browser">COMPONENTS</div>
-        </div>
-        {/* <img src="/public/images/coffee1.jpg"></img> */}
-        <div className="one font-lobster">{greeting}</div>
+        <BrowserApp />
       </BrowserView>
       <MobileView>
-        <div className="portfolio">
-          <div class="portfolio-text">Portfolio</div>
-        </div>
         <div className="navbar">
           <div class="navbar-option-mobile">WEB APPLICATIONS</div>
           <div class="navbar-option-mobile">COMPONENTS</div>
