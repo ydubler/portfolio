@@ -17,7 +17,6 @@ function App() {
       <BrowserView>
         <BrowserApp />
       </BrowserView>
-
       <MobileView>
         <MobileApp />
       </MobileView>
