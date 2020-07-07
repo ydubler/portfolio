@@ -1,12 +1,5 @@
 import React, { useState } from "react";
-import {
-  BrowserView,
-  MobileView,
-  isBrowser,
-  isMobile,
-} from "react-device-detect";
-import BrowserApp from "./browser/BrowserApp";
-import MobileApp from "./mobile/MobileApp";
+import "../../public/css/App.css"; // CSS
 
 function App() {
   // State
@@ -14,12 +7,14 @@ function App() {
 
   return (
     <>
-      <BrowserView>
-        <BrowserApp />
-      </BrowserView>
-      <MobileView>
-        <MobileApp />
-      </MobileView>
+      <div className="portfolio-browser">
+        <div class="portfolio-text-browser">Portfolio</div>
+      </div>
+      <div className="navbar-browser">
+        <div class="navbar-option-browser">WEB APPLICATIONS</div>
+        <div class="navbar-option-browser">COMPONENTS</div>
+      </div>
+      {/* <img src="/public/images/coffee1.jpg"></img> */}
     </>
   );
 }
