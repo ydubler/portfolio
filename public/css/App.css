@@ -42,3 +42,14 @@ body {
   background-color: #4985ff;
   color: white;
 }
+
+.navbar-option-opened {
+  background-color: #4985ff;
+  color: white;
+}
+
+.navbar-option-dropdown {
+  text-align: left;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+}
