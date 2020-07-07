@@ -32,7 +32,9 @@ function App() {
         </div>
         {isWebAppsOpen && (
           <div className="navbar-option-dropdown">
-            <div className="navbar-option-dropdown-title">GameStats</div>
+            <div className="navbar-option-dropdown-title">
+              <a href="#">GameStats</a>
+            </div>
             <div className="navbar-option-dropdown-techstack">React</div>
             <div className="navbar-option-dropdown-techstack">Node</div>
             <div className="navbar-option-dropdown-techstack">PostgreSQL</div>
