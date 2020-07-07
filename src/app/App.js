@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { isMobile, isBrowser } from "react-device-detect";
 import "../../public/css/App.css"; // CSS
 import "../../public/css/Fonts.css"; // CSS Fonts
 
@@ -10,7 +11,7 @@ function App() {
   return (
     <>
       <div className="portfolio">
-        <div class="portfolio-text">Portfolio</div>
+        <div className="portfolio-text">Portfolio</div>
       </div>
       <div className="navbar">
         <div
@@ -44,6 +45,11 @@ function App() {
         >
           COMPONENTS
         </div>
+        {isComponentsOpen && (
+          <div className="navbar-option-dropdown">
+            Animated Navbar (React, SVG)
+          </div>
+        )}
       </div>
       {/* <img src="/public/images/coffee1.jpg"></img> */}
     </>

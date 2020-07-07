@@ -26,11 +26,8 @@ body {
 
 .navbar-option {
   display: inline-block;
-  height: auto;
-  width: 100%;
   margin: auto;
-  padding-left: 20px;
-  padding-right: 20px;
+  width: 99%;
   border: 2px tan solid;
   border-radius: 10px;
   font-family: "Fascinate Inline", cursive;
@@ -49,6 +46,7 @@ body {
 }
 
 .navbar-option-dropdown {
+  background-color: ivory;
   text-align: left;
   font-family: "Open Sans", sans-serif;
   font-size: 20px;
