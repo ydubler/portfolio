@@ -2,7 +2,7 @@ body {
   background-color: white;
 }
 
-.portfolio-browser {
+.portfolio {
   display: block;
   width: 100%;
   height: auto;
@@ -10,21 +10,21 @@ body {
   background-color: #4985ff;
 }
 
-.portfolio-text-browser {
+.portfolio-text {
   padding-bottom: 20px;
   font-family: "Lobster Two", cursive;
   font-size: 100px;
   color: white;
 }
 
-.navbar-browser {
+.navbar {
   width: auto;
   height: auto;
   margin: auto;
   text-align: center;
 }
 
-.navbar-option-browser {
+.navbar-option {
   display: inline-block;
   height: auto;
   width: 100%;
@@ -38,7 +38,7 @@ body {
   color: rgb(94, 81, 76);
 }
 
-.navbar-option-browser:hover {
+.navbar-option:hover {
   background-color: #4985ff;
   color: white;
 }

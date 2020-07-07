@@ -7,12 +7,12 @@ function App() {
 
   return (
     <>
-      <div className="portfolio-browser">
-        <div class="portfolio-text-browser">Portfolio</div>
+      <div className="portfolio">
+        <div class="portfolio-text">Portfolio</div>
       </div>
-      <div className="navbar-browser">
-        <div class="navbar-option-browser">WEB APPLICATIONS</div>
-        <div class="navbar-option-browser">COMPONENTS</div>
+      <div className="navbar">
+        <div class="navbar-option">WEB APPLICATIONS</div>
+        <div class="navbar-option">COMPONENTS</div>
       </div>
       {/* <img src="/public/images/coffee1.jpg"></img> */}
     </>
