@@ -2,7 +2,7 @@ body {
   background-color: white;
 }
 
-.portfolio {
+.portfolio-mobile {
   display: block;
   width: 100%;
   height: auto;
@@ -10,21 +10,21 @@ body {
   background-color: #4985ff;
 }
 
-.portfolio-text {
+.portfolio-text-mobile {
   padding-bottom: 20px;
   font-family: "Lobster Two", cursive;
   font-size: 100px;
   color: white;
 }
 
-.navbar {
+.navbar-mobile {
   width: auto;
   height: auto;
   margin: auto;
   text-align: center;
 }
 
-.navbar-option {
+.navbar-option-mobile {
   display: inline-block;
   height: auto;
   margin: auto;
@@ -35,14 +35,4 @@ body {
   font-family: "Fascinate Inline", cursive;
   font-size: 40px;
   color: rgb(94, 81, 76);
-}
-
-.font-lobster {
-  font-family: "Lobster Two", cursive;
-}
-
-.fonts {
-  font-family: "Fascinate Inline", cursive;
-  font-family: "Lobster Two", cursive;
-  font-family: "Open Sans", sans-serif;
 }

@@ -8,15 +8,14 @@ function BrowserApp() {
 
   return (
     <>
-      <div className="portfolio">
-        <div class="portfolio-text">Portfolio</div>
+      <div className="portfolio-mobile">
+        <div class="portfolio-text-mobile">Portfolio</div>
       </div>
-      <div className="navbar">
-        <div class="navbar-option">WEB APPLICATIONS</div>
-        <div class="navbar-option">COMPONENTS</div>
+      <div className="navbar-mobile">
+        <div class="navbar-option-mobile">WEB APPLICATIONS</div>
+        <div class="navbar-option-mobile">COMPONENTS</div>
       </div>
       {/* <img src="/public/images/coffee1.jpg"></img> */}
-      <div className="one font-lobster">{greeting}</div>
     </>
   );
 }
