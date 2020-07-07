@@ -27,6 +27,7 @@ body {
 .navbar-option-browser {
   display: inline-block;
   height: auto;
+  width: 100%;
   margin: auto;
   padding-left: 20px;
   padding-right: 20px;
@@ -40,14 +41,4 @@ body {
 .navbar-option-browser:hover {
   background-color: #4985ff;
   color: white;
-}
-
-.font-lobster {
-  font-family: "Lobster Two", cursive;
-}
-
-.fonts {
-  font-family: "Fascinate Inline", cursive;
-  font-family: "Lobster Two", cursive;
-  font-family: "Open Sans", sans-serif;
 }
