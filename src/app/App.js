@@ -20,7 +20,7 @@ function App() {
 
     const browserContentWidth = isBrowser
       ? 0.7 * window.screen.width
-      : window.screen.width;
+      : window.screen.width - 40;
     setBrowserContentWidth(browserContentWidth);
   });
 
