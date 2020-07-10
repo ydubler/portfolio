@@ -23,19 +23,32 @@ function App() {
 
   return (
     <>
-      <div className="portfolio">
-        <div className="portfolio-text">Portfolio</div>
-      </div>
-      <div></div>
-      <div
-        class="main-content"
-        style={{ width: isBrowser ? browserContentWidth : "100%" }}
-      >
-        <div class="main-content-title">Web Applications</div>
-        <div class="main-content-text">
-          Please browse the following list of web-applications:
+      <BrowserView>
+        <div className="portfolio">
+          <div className="portfolio-text">Portfolio</div>
         </div>
-      </div>
+        <div
+          class="main-content"
+          style={{ width: isBrowser ? "" + browserContentWidth : "100%" }}
+        >
+          <div class="main-content-title">Web Applications</div>
+          <div class="main-content-text">
+            Please browse the following list of web-applications:
+          </div>
+        </div>
+      </BrowserView>
+
+      <MobileView>
+        <div className="portfolio">
+          <div className="portfolio-text">Portfolio</div>
+        </div>
+        <div class="main-content" style={{ width: "100%" }}>
+          <div class="main-content-title">Web Applications</div>
+          <div class="main-content-text">
+            Please browse the following list of web-applications:
+          </div>
+        </div>
+      </MobileView>
 
       {/* <div className="navbar">
         <div
