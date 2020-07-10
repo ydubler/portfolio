@@ -27,6 +27,7 @@ function App() {
         <div className="portfolio">
           <div className="portfolio-text">Portfolio</div>
         </div>
+        <br />
         <div className="main-content" style={{ width: browserContentWidth }}>
           <div className="main-content-title">Web Applications</div>
           <div className="main-content-text">
@@ -39,6 +40,7 @@ function App() {
         <div className="portfolio">
           <div className="portfolio-text">Portfolio</div>
         </div>
+        <br />
         <div className="main-content-mobile">
           <div className="main-content-title">Web Applications</div>
           <div className="main-content-text">
