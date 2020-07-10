@@ -27,9 +27,9 @@ function App() {
         <div className="portfolio">
           <div className="portfolio-text">Portfolio</div>
         </div>
-        <div class="main-content" style={{ width: browserContentWidth }}>
-          <div class="main-content-title">Web Applications</div>
-          <div class="main-content-text">
+        <div className="main-content" style={{ width: browserContentWidth }}>
+          <div className="main-content-title">Web Applications</div>
+          <div className="main-content-text">
             Please browse the following list of web-applications: BROWSER
           </div>
         </div>
@@ -39,9 +39,9 @@ function App() {
         <div className="portfolio">
           <div className="portfolio-text">Portfolio</div>
         </div>
-        <div class="main-content" style={{ width: "100%" }}>
-          <div class="main-content-title">Web Applications</div>
-          <div class="main-content-text">
+        <div className="main-content" style={{ width: "100%" }}>
+          <div className="main-content-title">Web Applications</div>
+          <div className="main-content-text">
             Please browse the following list of web-applications: MOBILE
           </div>
         </div>
