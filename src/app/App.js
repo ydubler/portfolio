@@ -17,7 +17,10 @@ function App() {
   // Similar to componentDidMount and componentDidUpdate:
   useEffect(() => {
     // Update the document title using the browser API
-    const browserContentWidth = 0.7 * window.screen.width;
+
+    const browserContentWidth = isBrowser
+      ? 0.7 * window.screen.width
+      : window.screen.width;
     setBrowserContentWidth(browserContentWidth);
   });
 
@@ -27,7 +30,6 @@ function App() {
         <div className="portfolio">
           <div className="portfolio-text">Portfolio</div>
         </div>
-        <br />
         <div className="main-content" style={{ width: browserContentWidth }}>
           <div className="main-content-title">Web Applications</div>
           <div className="main-content-text">
@@ -40,8 +42,10 @@ function App() {
         <div className="portfolio">
           <div className="portfolio-text">Portfolio</div>
         </div>
-        <br />
-        <div className="main-content-mobile">
+        <div
+          className="main-content-mobile"
+          style={{ width: browserContentWidth }}
+        >
           <div className="main-content-title">Web Applications</div>
           <div className="main-content-text">
             Please browse the following list of web-applications: MOBILE.
