@@ -31,7 +31,7 @@ body {
 }
 
 .main-content {
-  display: inline-block;
+  display: block;
   background-color: white;
   border: solid 3px #4985ff;
   margin: 20px;
