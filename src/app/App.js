@@ -11,13 +11,15 @@ import "../../public/css/Fonts.css"; // CSS Fonts
 function App() {
   // State
   const [windowInnerWidth, setWindowInnerWidth] = useState(0);
-  const [browserContentWidth, setBrowserContentWidth] = useState(0);
+  const [contentWidthMax, setContentWidthMax] = useState(0);
+  const [contentWidth, setContentWidth] = useState(0);
   const [message, setMessage] = useState("");
 
   // Similar to componentDidMount and componentDidUpdate:
   useEffect(() => {
     // Update the document title using the browser API
     getWindowWidth();
+    getContentWidthMax();
     getContentWidth();
 
     window.onorientationchange = function (event) {
@@ -36,11 +38,31 @@ function App() {
     setWindowInnerWidth(windowWidth);
   }
 
+  function getContentWidthMax() {
+    let contentWidthMax = 0;
+
+    if (isBrowser) {
+      contentWidthMax = 0.7 * window.screen.width;
+    } else {
+      contentWidthMax = window.innerWidth - 46;
+    }
+
+    setContentWidthMax(contentWidthMax);
+  }
+
   function getContentWidth() {
-    const browserContentWidth = isBrowser
-      ? 0.7 * window.screen.width
-      : window.innerWidth - 40;
-    setBrowserContentWidth(browserContentWidth);
+    let contentWidth = 0;
+
+    if (isBrowser) {
+      contentWidth =
+        window.innerWidth >= contentWidthMax
+          ? 0.7 * window.screen.width
+          : window.innerWidth - 46;
+    } else {
+      contentWidth = window.innerWidth - 46;
+    }
+
+    setContentWidth(contentWidth);
   }
 
   return (
@@ -49,10 +71,14 @@ function App() {
         <div className="portfolio">
           <div className="portfolio-text">Portfolio</div>
         </div>
-        <div className="main-content" style={{ width: browserContentWidth }}>
+        <div className="main-content" style={{ width: contentWidth }}>
           <div className="main-content-title">Web Applications</div>
           <div className="main-content-text">
             Please browse the following list of web-applications: BROWSER.
+            <br />
+            contentWidth: {contentWidth}
+            <br />
+            contentWidthMax: {contentWidthMax}
           </div>
         </div>
       </BrowserView>
@@ -61,10 +87,7 @@ function App() {
         <div className="portfolio">
           <div className="portfolio-text">Portfolio</div>
         </div>
-        <div
-          className="main-content-mobile"
-          style={{ width: browserContentWidth }}
-        >
+        <div className="main-content-mobile" style={{ width: contentWidth }}>
           <div className="main-content-title">Web Applications</div>
           <div className="main-content-text">
             Please browse the following list of web-applications: MOBILE.
