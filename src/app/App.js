@@ -59,7 +59,7 @@ function App() {
           ? 0.7 * window.screen.width
           : window.innerWidth - 46;
     } else {
-      contentWidth = window.innerWidth - 46;
+      contentWidth = window.innerWidth - 86;
     }
 
     setContentWidth(contentWidth);
@@ -70,7 +70,7 @@ function App() {
       <BrowserView>
         <div
           className="portfolio"
-          style={{ minWidth: isBrowser ? "400px" : 0 }}
+          style={{ minWidth: isBrowser ? "400px" : "0px" }}
         >
           <div className="portfolio-text">Portfolio</div>
         </div>
@@ -78,7 +78,7 @@ function App() {
           className="main-content"
           style={{
             width: contentWidth,
-            minWidth: isBrowser ? "400px" : 0,
+            minWidth: isBrowser ? "400px" : "0px",
           }}
         >
           <div className="main-content-title">Web Applications</div>
