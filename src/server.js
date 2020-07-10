@@ -62,6 +62,8 @@ server.get("/", (req, res) => {
   <meta name="author" content="Yuri Dubler" />
   <meta name="description" content="Yuri Dubler's Portfolio" />
   <link href="https://fonts.googleapis.com/css2?family=Fascinate+Inline&family=Lobster+Two&family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fondamento&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Galada&family=Montserrat&display=swap" rel="stylesheet">
   </head>
   <body style="margin:0px;font-family:Helvetica Neue" id="body">
   <div id="mountnode">${HTML}</div>
