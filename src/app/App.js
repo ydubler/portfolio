@@ -30,7 +30,7 @@ function App() {
         <div className="main-content" style={{ width: browserContentWidth }}>
           <div className="main-content-title">Web Applications</div>
           <div className="main-content-text">
-            Please browse the following list of web-applications: BROWSER
+            Please browse the following list of web-applications: BROWSER.
           </div>
         </div>
       </BrowserView>
@@ -42,7 +42,7 @@ function App() {
         <div className="main-content" style={{ width: "100%" }}>
           <div className="main-content-title">Web Applications</div>
           <div className="main-content-text">
-            Please browse the following list of web-applications: MOBILE
+            Please browse the following list of web-applications: MOBILE.
           </div>
         </div>
       </MobileView>
