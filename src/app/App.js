@@ -10,20 +10,33 @@ import "../../public/css/Fonts.css"; // CSS Fonts
 
 function App() {
   // State
+  const [windowInnerWidth, setWindowInnerWidth] = useState(0);
   const [browserContentWidth, setBrowserContentWidth] = useState(0);
   const [message, setMessage] = useState("");
 
   // Similar to componentDidMount and componentDidUpdate:
   useEffect(() => {
     // Update the document title using the browser API
-    setContentWidth();
-    window.addEventListener("orientationchange", function (event) {
-      setContentWidth();
+    getWindowWidth();
+    getContentWidth();
+
+    window.onorientationchange = function (event) {
+      getContentWidth();
       setMessage(message + "\nOrientation Changed");
-    });
+    };
+
+    window.onresize = function (event) {
+      getContentWidth();
+      setMessage(message + "\nOrientation Changed");
+    };
   });
 
-  function setContentWidth() {
+  function getWindowWidth() {
+    const windowWidth = window.innerWidth;
+    setWindowInnerWidth(windowWidth);
+  }
+
+  function getContentWidth() {
     const browserContentWidth = isBrowser
       ? 0.7 * window.screen.width
       : window.screen.width - 40;
