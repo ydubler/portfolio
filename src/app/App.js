@@ -68,17 +68,14 @@ function App() {
   return (
     <>
       <BrowserView>
-        <div
-          className="portfolio"
-          style={{ minWidth: isBrowser ? "400px" : "0px" }}
-        >
+        <div className="portfolio" style={{ minWidth: "400px" }}>
           <div className="portfolio-text">Portfolio</div>
         </div>
         <div
           className="main-content"
           style={{
             width: contentWidth,
-            minWidth: isBrowser ? "400px" : "0px",
+            minWidth: "400px",
           }}
         >
           <div className="main-content-title">Web Applications</div>
