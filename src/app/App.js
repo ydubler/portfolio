@@ -91,6 +91,10 @@ function App() {
           <div className="main-content-title">Web Applications</div>
           <div className="main-content-text">
             Please browse the following list of web-applications: MOBILE.
+            <br />
+            contentWidth: {contentWidth}
+            <br />
+            contentWidthMax: {contentWidthMax}
           </div>
         </div>
       </MobileView>
