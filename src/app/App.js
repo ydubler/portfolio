@@ -70,7 +70,7 @@ function App() {
       <BrowserView>
         <div
           className="portfolio"
-          style={{ minWidth: isBrowser ? "400px" : undefined }}
+          style={{ minWidth: isBrowser ? "400px" : 0 }}
         >
           <div className="portfolio-text">Portfolio</div>
         </div>
@@ -78,7 +78,7 @@ function App() {
           className="main-content"
           style={{
             width: contentWidth,
-            minWidth: isBrowser ? "400px" : undefined,
+            minWidth: isBrowser ? "400px" : 0,
           }}
         >
           <div className="main-content-title">Web Applications</div>
