@@ -11,17 +11,19 @@ import "../../public/css/Fonts.css"; // CSS Fonts
 function App() {
   // State
   const [browserContentWidth, setBrowserContentWidth] = useState(0);
+  const [message, setMessage] = useState("");
 
   // Similar to componentDidMount and componentDidUpdate:
   useEffect(() => {
     // Update the document title using the browser API
-    getContentWidth();
+    setContentWidth();
     window.addEventListener("orientationchange", function (event) {
-      getContentWidth();
+      setContentWidth();
+      setMessage(message + "\nOrientation Changed");
     });
   });
 
-  function getContentWidth() {
+  function setContentWidth() {
     const browserContentWidth = isBrowser
       ? 0.7 * window.screen.width
       : window.screen.width - 40;
