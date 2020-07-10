@@ -31,7 +31,18 @@ body {
 }
 
 .main-content {
-  display: block;
+  display: inline-block;
+  background-color: white;
+  border: solid 3px #4985ff;
+  margin: 20px;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  color: darkblue;
+  border-radius: 20px;
+}
+
+.main-content-mobile {
+  display: inline-block;
   background-color: white;
   border: solid 3px #4985ff;
   margin: 20px;

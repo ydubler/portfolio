@@ -39,7 +39,7 @@ function App() {
         <div className="portfolio">
           <div className="portfolio-text">Portfolio</div>
         </div>
-        <div className="main-content" style={{ width: "100%" }}>
+        <div className="main-content-mobile">
           <div className="main-content-title">Web Applications</div>
           <div className="main-content-text">
             Please browse the following list of web-applications: MOBILE.
