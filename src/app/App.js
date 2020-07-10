@@ -27,13 +27,10 @@ function App() {
         <div className="portfolio">
           <div className="portfolio-text">Portfolio</div>
         </div>
-        <div
-          class="main-content"
-          style={{ width: isBrowser ? "" + browserContentWidth : "100%" }}
-        >
+        <div class="main-content" style={{ width: browserContentWidth }}>
           <div class="main-content-title">Web Applications</div>
           <div class="main-content-text">
-            Please browse the following list of web-applications:
+            Please browse the following list of web-applications: BROWSER
           </div>
         </div>
       </BrowserView>
@@ -45,7 +42,7 @@ function App() {
         <div class="main-content" style={{ width: "100%" }}>
           <div class="main-content-title">Web Applications</div>
           <div class="main-content-text">
-            Please browse the following list of web-applications:
+            Please browse the following list of web-applications: MOBILE
           </div>
         </div>
       </MobileView>
