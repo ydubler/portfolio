@@ -24,8 +24,7 @@ body {
 }
 
 .portfolio-text {
-  padding-bottom: 20px;
-  font-family: "Fascinate Inline", cursive;
+  font-family: "Galada", cursive;
   font-size: 100px;
   color: white;
   text-decoration: underline;
@@ -34,7 +33,16 @@ body {
 .main-content {
   display: inline-block;
   background-color: white;
-  height: 100%;
+  margin: 20px;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  color: darkblue;
+  border-radius: 20px;
+}
+
+.main-content-mobile {
+  display: inline-block;
+  background-color: white;
   margin: 20px;
   font-size: 16px;
   font-family: "Open Sans", sans-serif;
@@ -46,7 +54,7 @@ body {
   display: block;
   width: 100%;
   margin: 20px;
-  font-family: "Lobster Two", cursive;
+  font-family: "Galada", cursive;
   font-size: 40px;
   color: black;
   text-decoration: underline;

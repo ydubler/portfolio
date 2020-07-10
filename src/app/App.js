@@ -1,5 +1,10 @@
 import React, { useState, useEffect } from "react";
-import { isMobile, isBrowser } from "react-device-detect";
+import {
+  isMobile,
+  isBrowser,
+  BrowserView,
+  MobileView,
+} from "react-device-detect";
 import "../../public/css/App.css"; // CSS
 import "../../public/css/Fonts.css"; // CSS Fonts
 
@@ -12,7 +17,8 @@ function App() {
   // Similar to componentDidMount and componentDidUpdate:
   useEffect(() => {
     // Update the document title using the browser API
-    setBrowserContentWidth(0.7 * window.screen.width);
+    const browserContentWidth = 0.7 * window.screen.width;
+    setBrowserContentWidth(browserContentWidth);
   });
 
   return (
@@ -20,13 +26,18 @@ function App() {
       <div className="portfolio">
         <div className="portfolio-text">Portfolio</div>
       </div>
-      <div class="main-content" style={{ width: browserContentWidth }}>
+      <div></div>
+      <div
+        class="main-content"
+        style={{ width: isBrowser ? browserContentWidth : "100%" }}
+      >
         <div class="main-content-title">Web Applications</div>
         <div class="main-content-text">
           Please browse the following list of web-applications:
         </div>
       </div>
-      <div className="navbar">
+
+      {/* <div className="navbar">
         <div
           className={
             isWebAppsOpen
@@ -110,7 +121,7 @@ function App() {
             <br />
           </div>
         )}
-      </div>
+      </div> */}
       {/* <img src="/public/images/coffee1.jpg"></img> */}
     </>
   );
