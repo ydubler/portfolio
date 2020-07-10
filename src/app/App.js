@@ -59,7 +59,7 @@ function App() {
           ? 0.7 * window.screen.width
           : window.innerWidth - 46;
     } else {
-      contentWidth = window.innerWidth - 86;
+      contentWidth = window.innerWidth - 46;
     }
 
     setContentWidth(contentWidth);
