@@ -46,7 +46,7 @@ function App() {
       contentWidthMax = 0.7 * window.screen.width;
     } else {
       if (isMobile && isSafari) {
-        contentWidthMax = document.getElementById("body").clientWidth - 46;
+        contentWidthMax = document.documentElement.clientWidth - 46;
       } else {
         contentWidthMax = window.innerWidth - 46;
       }
@@ -65,7 +65,7 @@ function App() {
           : window.innerWidth - 46;
     } else {
       if (isMobile && isSafari) {
-        contentWidth = document.getElementById("body").clientWidth - 46;
+        contentWidth = document.documentElement.clientWidth - 46;
       } else {
         contentWidth = window.innerWidth - 46;
       }

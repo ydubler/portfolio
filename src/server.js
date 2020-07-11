@@ -66,7 +66,7 @@ server.get("/", (req, res) => {
   <link href="https://fonts.googleapis.com/css2?family=Fondamento&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Galada&family=Montserrat&display=swap" rel="stylesheet">
   </head>
-  <body id="body" style="margin:0px;font-family:Helvetica Neue" id="body">
+  <body style="margin:0px;font-family:Helvetica Neue" id="body">
   <div id="mountnode">${HTML}</div>
   <script src="../dist/main.js"></script>
   </body>
