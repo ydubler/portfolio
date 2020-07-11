@@ -20,7 +20,7 @@ body {
   width: 100%;
   height: auto;
   text-align: center;
-  background-color: #2d73ff;
+  background-color: #397bff;
 }
 
 .name-text {
@@ -40,7 +40,7 @@ body {
 .portfolio-text {
   font-family: "Galada", cursive;
   font-size: 100px;
-  color: white;
+  color: rgb(255, 255, 255);
   text-decoration: underline;
 }
 
@@ -77,6 +77,16 @@ body {
   font-family: "Open Sans", sans-serif;
   color: darkblue;
   border-radius: 20px;
+}
+
+.main-content-mobile-2 {
+  display: block;
+  background-color: white;
+  border: solid 3px #4985ff;
+  width: 100%;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  color: darkblue;
 }
 
 .main-content-title {

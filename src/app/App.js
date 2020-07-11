@@ -80,7 +80,57 @@ function App() {
 
   return (
     <>
-      <BrowserView>
+      {isBrowser && (
+        <>
+          <div className="name" style={{ minWidth: "400px" }}>
+            <div className="name-text">Yuri Dubler's</div>
+          </div>
+          <div className="portfolio" style={{ minWidth: "400px" }}>
+            <div className="portfolio-text">Portfolio</div>
+          </div>
+          <div
+            className="main-content"
+            style={{
+              width: contentWidth,
+              minWidth: "400px",
+            }}
+          >
+            <div className="main-content-title">Web Applications</div>
+            <div className="main-content-text">
+              Please browse the following list of web-applications: BROWSER.
+              <br />
+              contentWidth: {contentWidth}
+              <br />
+              contentWidthMax: {contentWidthMax}
+            </div>
+          </div>
+        </>
+      )}
+      {isMobile && (
+        <>
+          <div className="name">
+            <div className="name-text">Yuri Dubler's</div>
+          </div>
+          <div className="portfolio">
+            <div className="portfolio-text">Portfolio</div>
+          </div>
+          <div className={isMobile ? "main-content-mobile-2" : undefined}>
+            <div className="main-content-title">Web Applications</div>
+            <div className="main-content-text">
+              Please browse the following list of web-applications: MOBILE.
+              <br />
+              contentWidth: {contentWidth}
+              <br />
+              contentWidthMax: {contentWidthMax}
+              <br />
+              {isIOS && isSafari && <>"IS IOS / SAFARI"</>}
+              <br />
+            </div>
+          </div>
+        </>
+      )}
+
+      {/* <BrowserView>
         <div className="name" style={{ minWidth: "400px" }}>
           <div className="name-text">Yuri Dubler's</div>
         </div>
@@ -103,9 +153,9 @@ function App() {
             contentWidthMax: {contentWidthMax}
           </div>
         </div>
-      </BrowserView>
+      </BrowserView> */}
 
-      <MobileView>
+      {/* <MobileView>
         <div className="name" style={{ minWidth: "400px" }}>
           <div className="name-text">Yuri Dubler's</div>
         </div>
@@ -125,7 +175,7 @@ function App() {
             <br />
           </div>
         </div>
-      </MobileView>
+      </MobileView> */}
 
       {/* <img src="/public/images/coffee1.jpg"></img> */}
     </>
