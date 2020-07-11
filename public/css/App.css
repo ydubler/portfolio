@@ -3,6 +3,13 @@ body {
   text-align: center;
 }
 
+.one-hundred {
+  display: block;
+  width: 100%;
+  height: 300px;
+  background-color: white;
+}
+
 .font-galada {
   font-family: "Galada", cursive;
 }

@@ -106,8 +106,10 @@ function App() {
           </div>
         </>
       )}
+
       {isMobile && (
         <>
+          <div className="one-hundred"></div>
           <div className="name">
             <div className="name-text">Yuri Dubler's</div>
           </div>
