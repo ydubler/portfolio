@@ -48,7 +48,7 @@ function App() {
     } else {
       if (isMobile && isSafari) {
         //contentWidthMax = window.screen.availWidth - 46;
-        contentWidthMax = (document.body.clientWidth - 46) * 0.9;
+        contentWidthMax = document.body.clientWidth - 46;
       } else {
         contentWidthMax = window.innerWidth - 46;
       }
@@ -69,7 +69,7 @@ function App() {
       if (isMobile && isSafari) {
         //contentWidth = window.screen.availWidth - 46;
 
-        contentWidth = (document.body.clientWidth - 46) * 0.9;
+        contentWidth = document.body.clientWidth - 46;
       } else {
         contentWidth = window.innerWidth - 46;
       }
@@ -105,6 +105,9 @@ function App() {
       <MobileView>
         <div className="portfolio">
           <div className="portfolio-text">Portfolio</div>
+        </div>
+        <div className="main-content-outer-mobile">
+          <div className="main-content-inner-mobile">EHER</div>
         </div>
         <div className="main-content-mobile" style={{ width: contentWidth }}>
           <div className="main-content-title">Web Applications</div>

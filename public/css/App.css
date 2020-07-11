@@ -30,6 +30,17 @@ body {
   text-decoration: underline;
 }
 
+.main-content-outer-mobile {
+  padding: 20px;
+  background-color: blue;
+}
+
+.main-content-inner-mobile {
+  width: 100%;
+  height: 500px;
+  background-color: grey;
+}
+
 .main-content {
   display: inline-block;
   background-color: white;
