@@ -4,6 +4,7 @@ import {
   isBrowser,
   BrowserView,
   MobileView,
+  isSafari,
 } from "react-device-detect";
 import "../../public/css/App.css"; // CSS
 import "../../public/css/Fonts.css"; // CSS Fonts
@@ -44,7 +45,11 @@ function App() {
     if (isBrowser) {
       contentWidthMax = 0.7 * window.screen.width;
     } else {
-      contentWidthMax = window.innerWidth - 120;
+      if (isMobile && isSafari) {
+        contentWidth = client.width - 46;
+      } else {
+        contentWidth = window.innerWidth - 46;
+      }
     }
 
     setContentWidthMax(contentWidthMax);
@@ -59,7 +64,11 @@ function App() {
           ? 0.7 * window.screen.width
           : window.innerWidth - 46;
     } else {
-      contentWidth = window.innerWidth - 120;
+      if (isMobile && isSafari) {
+        contentWidth = client.width - 46;
+      } else {
+        contentWidth = window.innerWidth - 46;
+      }
     }
 
     setContentWidth(contentWidth);
