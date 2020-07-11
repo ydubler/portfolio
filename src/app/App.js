@@ -5,6 +5,7 @@ import {
   BrowserView,
   MobileView,
   isSafari,
+  isIOS,
 } from "react-device-detect";
 import "../../public/css/App.css"; // CSS
 import "../../public/css/Fonts.css"; // CSS Fonts
@@ -46,8 +47,8 @@ function App() {
       contentWidthMax = 0.7 * window.screen.width;
     } else {
       if (isMobile && isSafari) {
-        contentWidthMax = window.screen.availWidth - 46;
-        //contentWidthMax = document.documentElement.clientWidth - 46;
+        //contentWidthMax = window.screen.availWidth - 46;
+        contentWidthMax = document.body.clientWidth - 46;
       } else {
         contentWidthMax = window.innerWidth - 46;
       }
@@ -66,8 +67,8 @@ function App() {
           : window.innerWidth - 46;
     } else {
       if (isMobile && isSafari) {
-        contentWidth = window.screen.availWidth - 46;
-        //contentWidth = document.documentElement.clientWidth - 46;
+        //contentWidth = window.screen.availWidth - 46;
+        contentWidth = document.body.clientWidth - 46;
       } else {
         contentWidth = window.innerWidth - 46;
       }
@@ -112,6 +113,8 @@ function App() {
             contentWidth: {contentWidth}
             <br />
             contentWidthMax: {contentWidthMax}
+            <br />
+            {isIOS && isSafari && <>"IS IOS / SAFARI"</>}
           </div>
         </div>
       </MobileView>
