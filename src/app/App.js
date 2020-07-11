@@ -106,9 +106,6 @@ function App() {
         <div className="portfolio">
           <div className="portfolio-text">Portfolio</div>
         </div>
-        <div className="main-content-outer-mobile">
-          <div className="main-content-inner-mobile">EHER</div>
-        </div>
         <div className="main-content-mobile" style={{ width: contentWidth }}>
           <div className="main-content-title">Web Applications</div>
           <div className="main-content-text">
