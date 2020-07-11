@@ -48,7 +48,7 @@ function App() {
     } else {
       if (isMobile && isSafari) {
         //contentWidthMax = window.screen.availWidth - 46;
-        contentWidthMax = document.body.clientWidth - 46;
+        contentWidthMax = (document.body.clientWidth - 46) * 0.9;
       } else {
         contentWidthMax = window.innerWidth - 46;
       }
@@ -68,7 +68,8 @@ function App() {
     } else {
       if (isMobile && isSafari) {
         //contentWidth = window.screen.availWidth - 46;
-        contentWidth = document.body.clientWidth - 46;
+
+        contentWidth = (document.body.clientWidth - 46) * 0.9;
       } else {
         contentWidth = window.innerWidth - 46;
       }
@@ -115,6 +116,7 @@ function App() {
             contentWidthMax: {contentWidthMax}
             <br />
             {isIOS && isSafari && <>"IS IOS / SAFARI"</>}
+            <br />
           </div>
         </div>
       </MobileView>
