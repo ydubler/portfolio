@@ -81,6 +81,9 @@ function App() {
   return (
     <>
       <BrowserView>
+        <div className="name" style={{ minWidth: "400px" }}>
+          <div className="name-text">Yuri Dubler's</div>
+        </div>
         <div className="portfolio" style={{ minWidth: "400px" }}>
           <div className="portfolio-text">Portfolio</div>
         </div>
@@ -103,6 +106,9 @@ function App() {
       </BrowserView>
 
       <MobileView>
+        <div className="name" style={{ minWidth: "400px" }}>
+          <div className="name-text">Yuri Dubler's</div>
+        </div>
         <div className="portfolio">
           <div className="portfolio-text">Portfolio</div>
         </div>
