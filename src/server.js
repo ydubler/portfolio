@@ -59,6 +59,7 @@ server.get("/", (req, res) => {
   <title>Yuri Dubler's Portfolio</title>
   <meta name="charset" content="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
   <meta name="author" content="Yuri Dubler" />
   <meta name="description" content="Yuri Dubler's Portfolio" />
   <link href="https://fonts.googleapis.com/css2?family=Fascinate+Inline&family=Lobster+Two&family=Open+Sans&display=swap" rel="stylesheet">

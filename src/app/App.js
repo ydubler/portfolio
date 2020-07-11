@@ -46,7 +46,7 @@ function App() {
       contentWidthMax = 0.7 * window.screen.width;
     } else {
       if (isMobile && isSafari) {
-        contentWidth = client.width - 46;
+        contentWidth = screen.width - 46;
       } else {
         contentWidth = window.innerWidth - 46;
       }
@@ -65,7 +65,7 @@ function App() {
           : window.innerWidth - 46;
     } else {
       if (isMobile && isSafari) {
-        contentWidth = client.width - 46;
+        contentWidth = screen.width - 46;
       } else {
         contentWidth = window.innerWidth - 46;
       }
