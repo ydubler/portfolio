@@ -83,17 +83,23 @@ function App() {
       {isBrowser && (
         <>
           <div className="one-hundred"></div>
-          <div className="name" style={{ minWidth: "400px" }}>
+          <div
+            className="name"
+            style={{ minWidth: isBrowser ? "400px" : undefined }}
+          >
             <div className="name-text">Yuri Dubler's</div>
           </div>
-          <div className="portfolio" style={{ minWidth: "400px" }}>
+          <div
+            className="portfolio"
+            style={{ minWidth: isBrowser ? "400px" : undefined }}
+          >
             <div className="portfolio-text">Portfolio</div>
           </div>
           <div
             className="main-content"
             style={{
               width: contentWidth,
-              minWidth: "400px",
+              minWidth: isBrowser ? "400px" : undefined,
             }}
           >
             <div className="main-content-title">Web Applications</div>
@@ -117,7 +123,7 @@ function App() {
           <div className="portfolio">
             <div className="portfolio-text">Portfolio</div>
           </div>
-          <div className={isMobile ? "main-content-mobile-2" : undefined}>
+          <div className="main-content-mobile-2">
             <div className="main-content-title">Web Applications</div>
             <div className="main-content-text">
               Please browse the following list of web-applications: MOBILE.
