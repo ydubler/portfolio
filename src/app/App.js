@@ -82,6 +82,7 @@ function App() {
     <>
       {isBrowser && (
         <>
+          <div className="one-hundred"></div>
           <div className="name" style={{ minWidth: "400px" }}>
             <div className="name-text">Yuri Dubler's</div>
           </div>
