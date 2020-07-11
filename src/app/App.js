@@ -46,7 +46,8 @@ function App() {
       contentWidthMax = 0.7 * window.screen.width;
     } else {
       if (isMobile && isSafari) {
-        contentWidthMax = document.documentElement.clientWidth - 46;
+        contentWidthMax = window.screen.availWidth - 46;
+        //contentWidthMax = document.documentElement.clientWidth - 46;
       } else {
         contentWidthMax = window.innerWidth - 46;
       }
@@ -65,7 +66,8 @@ function App() {
           : window.innerWidth - 46;
     } else {
       if (isMobile && isSafari) {
-        contentWidth = document.documentElement.clientWidth - 46;
+        contentWidth = window.screen.availWidth - 46;
+        //contentWidth = document.documentElement.clientWidth - 46;
       } else {
         contentWidth = window.innerWidth - 46;
       }
