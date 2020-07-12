@@ -124,18 +124,22 @@ function App() {
               <div className="main-content-item-techstack">NODE</div>
               <div className="main-content-item-techstack">EXPRESS</div>
               <div className="main-content-item-techstack">POSTGRESQL</div>
+              <br />
               <div className="main-content-item-feature">RESPONSIVE</div>
               <div className="main-content-item-feature">SVG</div>
               <div className="main-content-item-feature">DATA VIS</div>
-              <div className="main-content-item-feature">LOGIN SYSTEM</div>
               <div className="main-content-item-feature">ADMIN CONTROLS</div>
               <div className="main-content-item-descr">
-                This web-application visualizes numerous statistics of my board
-                game group.
+                This web-application uses SVG to visualize numerous statistics
+                associated with my board game group. The data driving the
+                statistics (stored in a PostgreSQL database) includes: meeting
+                dates, players in attendance, choice of game, game winners, and
+                descriptions.
               </div>
             </div>
             <div className="main-content-item">
               <div className="main-content-item-title">Mock Website</div>
+              <br />
               <div className="main-content-item-techstack">REACT</div>
               <div className="main-content-item-techstack">NODE</div>
               <div className="main-content-item-techstack">EXPRESS</div>
@@ -143,10 +147,11 @@ function App() {
               <br />
               <div className="main-content-item-feature">RESPONSIVE</div>
               <div className="main-content-item-feature">LOGIN SYSTEM</div>
-              <div className="main-content-item-feature">DATA VIS</div>
-              <div className="main-content-item-feature">USER-SESSIONS</div>
+              <div className="main-content-item-feature">USER SESSIONS</div>
+              <div className="main-content-item-feature">PROFILE</div>
               <div className="main-content-item-descr">
-                This web-application features...
+                This responsive web-application features a login system, user
+                sessions, and profile page.
               </div>
             </div>
           </div>
@@ -160,10 +165,12 @@ function App() {
             <div className="main-content-title">Front End</div>
             <div className="main-content-item">
               <div className="main-content-item-title">Navbar</div>
+              <br />
               <div className="main-content-item-techstack">REACT</div>
               <div className="main-content-item-techstack">SVG</div>
+              <br />
               <div className="main-content-item-feature">RESPONSIVE</div>
-              <div className="main-content-item-feature">ANIMATED</div>
+              <div className="main-content-item-feature">SVG</div>
               <div className="main-content-item-descr">
                 This NavBar has been crafted to attract and engages users with
                 SVG animations.
@@ -171,6 +178,7 @@ function App() {
             </div>
             <div className="main-content-item">
               <div className="main-content-item-title">Collapsing Sidebar</div>
+              <br />
               <div className="main-content-item-techstack">REACT</div>
               <div className="main-content-item-feature">RECURSIVE</div>
               <div className="main-content-item-descr">
@@ -189,51 +197,68 @@ function App() {
             <div className="portfolio-text">Portfolio</div>
           </div>
           <div
-            className="main-content-mobile"
-            style={{ width: pageWidth - 46 }}
+            className="main-content"
+            style={{
+              width: pageWidth - 46,
+            }}
           >
             <div className="main-content-title">Web Apps</div>
             <div className="main-content-item">
-              <div className="main-content-item-title">GameStats</div>
+              <div className="main-content-item-title">Game-Stats</div>
+              <br />
               <div className="main-content-item-techstack">REACT</div>
               <div className="main-content-item-techstack">NODE</div>
               <div className="main-content-item-techstack">EXPRESS</div>
               <div className="main-content-item-techstack">POSTGRESQL</div>
               <div className="main-content-item-feature">RESPONSIVE</div>
+              <div className="main-content-item-feature">SVG</div>
+              <div className="main-content-item-feature">DATA VIS</div>
+              <div className="main-content-item-feature">LOGIN SYSTEM</div>
+              <div className="main-content-item-feature">ADMIN CONTROLS</div>
               <div className="main-content-item-descr">
-                This web-application features...
+                This web-application visualizes numerous statistics of my board
+                game group.
               </div>
             </div>
             <div className="main-content-item">
-              <div className="main-content-item-title">GameStats</div>
+              <div className="main-content-item-title">Mock Website</div>
+              <br />
               <div className="main-content-item-techstack">REACT</div>
               <div className="main-content-item-techstack">NODE</div>
               <div className="main-content-item-techstack">EXPRESS</div>
               <div className="main-content-item-techstack">POSTGRESQL</div>
+              <br />
               <div className="main-content-item-feature">RESPONSIVE</div>
+              <div className="main-content-item-feature">LOGIN SYSTEM</div>
+              <div className="main-content-item-feature">DATA VIS</div>
+              <div className="main-content-item-feature">USER-SESSIONS</div>
               <div className="main-content-item-descr">
                 This web-application features...
               </div>
             </div>
           </div>
           <div
-            className="main-content-mobile"
-            style={{ width: pageWidth - 46 }}
+            className="main-content"
+            style={{
+              width: pageWidth - 46,
+            }}
           >
             <div className="main-content-title">Front End</div>
             <div className="main-content-item">
               <div className="main-content-item-title">Navbar</div>
+              <br />
               <div className="main-content-item-techstack">REACT</div>
               <div className="main-content-item-techstack">SVG</div>
               <div className="main-content-item-feature">RESPONSIVE</div>
               <div className="main-content-item-feature">ANIMATED</div>
               <div className="main-content-item-descr">
-                This NavBar attracts and engages users with it's detailed SVG
-                animations.
+                This NavBar has been crafted to attract and engages users with
+                SVG animations.
               </div>
             </div>
             <div className="main-content-item">
               <div className="main-content-item-title">Collapsing Sidebar</div>
+              <br />
               <div className="main-content-item-techstack">REACT</div>
               <div className="main-content-item-feature">RECURSIVE</div>
               <div className="main-content-item-descr">
