@@ -128,6 +128,17 @@ function App() {
                 This web-application features...
               </div>
             </div>
+            <div className="main-content-item">
+              <div className="main-content-webapp-title">GameStats</div>
+              <div className="main-content-webapp-techstack">REACT</div>
+              <div className="main-content-webapp-techstack">NODE</div>
+              <div className="main-content-webapp-techstack">EXPRESS</div>
+              <div className="main-content-webapp-techstack">POSTGRESQL</div>
+              <div className="main-content-webapp-feature">RESPONSIVE</div>
+              <div className="main-content-webapp-descr">
+                This web-application features...
+              </div>
+            </div>
           </div>
         </>
       )}

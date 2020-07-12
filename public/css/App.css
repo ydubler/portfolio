@@ -98,7 +98,6 @@ body {
   font-family: "Montserrat", cursive;
   font-size: 16px;
   text-align: left;
-  border: solid 2px black;
 }
 
 .main-content-webapp-title {
@@ -113,30 +112,29 @@ body {
 }
 
 .main-content-webapp-techstack {
-  border: solid 2px black;
+  border: solid 2px white;
   display: inline-block;
   padding: 5px;
   margin: 5px;
   border-radius: 10px;
-  background-color: orangered;
+  background-color: #1e5cd6;
   color: white;
   font-size: 14px;
 }
 
 .main-content-webapp-feature {
   display: inline-block;
-  border: solid 2px black;
+  border: solid 2px white;
   padding: 2px;
   margin: 5px;
-  background-color: springgreen;
-  color: black;
+  background-color: white;
+  color: 1e5cd6;
   font-size: 14px;
 }
 
 .main-content-webapp-descr {
   display: block;
   padding: 10px;
-  margin: 10px;
   border-radius: 10px;
   color: black;
   font-size: 14px;
