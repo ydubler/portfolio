@@ -118,24 +118,34 @@ function App() {
           >
             <div className="main-content-title">Web Apps</div>
             <div className="main-content-item">
-              <div className="main-content-webapp-title">GameStats</div>
-              <div className="main-content-webapp-techstack">REACT</div>
-              <div className="main-content-webapp-techstack">NODE</div>
-              <div className="main-content-webapp-techstack">EXPRESS</div>
-              <div className="main-content-webapp-techstack">POSTGRESQL</div>
-              <div className="main-content-webapp-feature">RESPONSIVE</div>
-              <div className="main-content-webapp-descr">
+              <div className="main-content-item-title">GameStats</div>
+              <div className="main-content-item-techstack">REACT</div>
+              <div className="main-content-item-techstack">NODE</div>
+              <div className="main-content-item-techstack">EXPRESS</div>
+              <div className="main-content-item-techstack">POSTGRESQL</div>
+              <br />
+              <div className="main-content-item-feature">RESPONSIVE</div>
+              <div className="main-content-item-feature">DATA VIS</div>
+              <div className="main-content-item-feature">USER SESSIONS</div>
+              <div className="main-content-item-feature">LOGIN SYSTEM</div>
+              <div className="main-content-item-feature">ADMIN CONTROLS</div>
+              <div className="main-content-item-feature">
+                INVENTORY MANAGEMENT
+              </div>
+              <div className="main-content-item-feature">ONLINE STORE</div>
+              <div className="main-content-item-descr">
                 This web-application features...
               </div>
             </div>
             <div className="main-content-item">
-              <div className="main-content-webapp-title">GameStats</div>
-              <div className="main-content-webapp-techstack">REACT</div>
-              <div className="main-content-webapp-techstack">NODE</div>
-              <div className="main-content-webapp-techstack">EXPRESS</div>
-              <div className="main-content-webapp-techstack">POSTGRESQL</div>
-              <div className="main-content-webapp-feature">RESPONSIVE</div>
-              <div className="main-content-webapp-descr">
+              <div className="main-content-item-title">GameStats</div>
+              <div className="main-content-item-techstack">REACT</div>
+              <div className="main-content-item-techstack">NODE</div>
+              <div className="main-content-item-techstack">EXPRESS</div>
+              <div className="main-content-item-techstack">POSTGRESQL</div>
+              <br />
+              <div className="main-content-item-feature">RESPONSIVE</div>
+              <div className="main-content-item-descr">
                 This web-application features...
               </div>
             </div>
@@ -149,14 +159,22 @@ function App() {
           >
             <div className="main-content-title">Front End</div>
             <div className="main-content-item">
-              <div className="main-content-webapp-title">Navbar</div>
-              <div className="main-content-webapp-techstack">REACT</div>
-              <div className="main-content-webapp-techstack">SVG</div>
-              <div className="main-content-webapp-feature">RESPONSIVE</div>
-              <div className="main-content-webapp-feature">ANIMATED</div>
-              <div className="main-content-webapp-descr">
+              <div className="main-content-item-title">Navbar</div>
+              <div className="main-content-item-techstack">REACT</div>
+              <div className="main-content-item-techstack">SVG</div>
+              <div className="main-content-item-feature">RESPONSIVE</div>
+              <div className="main-content-item-feature">ANIMATED</div>
+              <div className="main-content-item-descr">
                 This NavBar attracts and engages users with it's detailed SVG
                 animations.
+              </div>
+            </div>
+            <div className="main-content-item">
+              <div className="main-content-item-title">Collapsing Sidebar</div>
+              <div className="main-content-item-techstack">REACT</div>
+              <div className="main-content-item-feature">RECURSIVE</div>
+              <div className="main-content-item-descr">
+                This collapsing Sidebar populates a dynamic list recursively.
               </div>
             </div>
           </div>
@@ -176,24 +194,24 @@ function App() {
           >
             <div className="main-content-title">Web Apps</div>
             <div className="main-content-item">
-              <div className="main-content-webapp-title">GameStats</div>
-              <div className="main-content-webapp-techstack">REACT</div>
-              <div className="main-content-webapp-techstack">NODE</div>
-              <div className="main-content-webapp-techstack">EXPRESS</div>
-              <div className="main-content-webapp-techstack">POSTGRESQL</div>
-              <div className="main-content-webapp-feature">RESPONSIVE</div>
-              <div className="main-content-webapp-descr">
+              <div className="main-content-item-title">GameStats</div>
+              <div className="main-content-item-techstack">REACT</div>
+              <div className="main-content-item-techstack">NODE</div>
+              <div className="main-content-item-techstack">EXPRESS</div>
+              <div className="main-content-item-techstack">POSTGRESQL</div>
+              <div className="main-content-item-feature">RESPONSIVE</div>
+              <div className="main-content-item-descr">
                 This web-application features...
               </div>
             </div>
             <div className="main-content-item">
-              <div className="main-content-webapp-title">GameStats</div>
-              <div className="main-content-webapp-techstack">REACT</div>
-              <div className="main-content-webapp-techstack">NODE</div>
-              <div className="main-content-webapp-techstack">EXPRESS</div>
-              <div className="main-content-webapp-techstack">POSTGRESQL</div>
-              <div className="main-content-webapp-feature">RESPONSIVE</div>
-              <div className="main-content-webapp-descr">
+              <div className="main-content-item-title">GameStats</div>
+              <div className="main-content-item-techstack">REACT</div>
+              <div className="main-content-item-techstack">NODE</div>
+              <div className="main-content-item-techstack">EXPRESS</div>
+              <div className="main-content-item-techstack">POSTGRESQL</div>
+              <div className="main-content-item-feature">RESPONSIVE</div>
+              <div className="main-content-item-descr">
                 This web-application features...
               </div>
             </div>
@@ -204,14 +222,22 @@ function App() {
           >
             <div className="main-content-title">Front End</div>
             <div className="main-content-item">
-              <div className="main-content-webapp-title">Navbar</div>
-              <div className="main-content-webapp-techstack">REACT</div>
-              <div className="main-content-webapp-techstack">SVG</div>
-              <div className="main-content-webapp-feature">RESPONSIVE</div>
-              <div className="main-content-webapp-feature">ANIMATED</div>
-              <div className="main-content-webapp-descr">
+              <div className="main-content-item-title">Navbar</div>
+              <div className="main-content-item-techstack">REACT</div>
+              <div className="main-content-item-techstack">SVG</div>
+              <div className="main-content-item-feature">RESPONSIVE</div>
+              <div className="main-content-item-feature">ANIMATED</div>
+              <div className="main-content-item-descr">
                 This NavBar attracts and engages users with it's detailed SVG
                 animations.
+              </div>
+            </div>
+            <div className="main-content-item">
+              <div className="main-content-item-title">Collapsing Sidebar</div>
+              <div className="main-content-item-techstack">REACT</div>
+              <div className="main-content-item-feature">RECURSIVE</div>
+              <div className="main-content-item-descr">
+                This collapsing Sidebar populates a dynamic list recursively.
               </div>
             </div>
           </div>
