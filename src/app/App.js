@@ -133,7 +133,10 @@ function App() {
           <div className="portfolio">
             <div className="portfolio-text">Portfolio</div>
           </div>
-          <div className="main-content-mobile-2">
+          <div
+            className="main-content-mobile-2"
+            style={{ width: pageWidth - 46 }}
+          >
             <div className="main-content-title">Web Applications</div>
             <div className="main-content-text">
               Please browse the following list of web-applications: MOBILE.
