@@ -124,18 +124,21 @@ body {
 
 .main-content-webapp-feature {
   display: inline-block;
-  border: solid 2px white;
-  padding: 2px;
+  border: solid 2px #1e5cd6;
+  padding: 5px;
   margin: 5px;
+  border-radius: 10px;
   background-color: white;
-  color: 1e5cd6;
+  color: #1e5cd6;
   font-size: 14px;
 }
 
 .main-content-webapp-descr {
+  background-color: #6598ff;
   display: block;
   padding: 10px;
-  border-radius: 10px;
+  margin: 5px;
   color: black;
   font-size: 14px;
+  color: white;
 }
