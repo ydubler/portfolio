@@ -155,7 +155,8 @@ function App() {
               <div className="main-content-webapp-feature">RESPONSIVE</div>
               <div className="main-content-webapp-feature">ANIMATED</div>
               <div className="main-content-webapp-descr">
-                This NavBar has been carefully crafted to be eye candy.
+                This NavBar attracts and engages users with it's detailed SVG
+                animations.
               </div>
             </div>
           </div>
@@ -194,6 +195,23 @@ function App() {
               <div className="main-content-webapp-feature">RESPONSIVE</div>
               <div className="main-content-webapp-descr">
                 This web-application features...
+              </div>
+            </div>
+          </div>
+          <div
+            className="main-content-mobile"
+            style={{ width: pageWidth - 46 }}
+          >
+            <div className="main-content-title">Front End</div>
+            <div className="main-content-item">
+              <div className="main-content-webapp-title">Navbar</div>
+              <div className="main-content-webapp-techstack">REACT</div>
+              <div className="main-content-webapp-techstack">SVG</div>
+              <div className="main-content-webapp-feature">RESPONSIVE</div>
+              <div className="main-content-webapp-feature">ANIMATED</div>
+              <div className="main-content-webapp-descr">
+                This NavBar attracts and engages users with it's detailed SVG
+                animations.
               </div>
             </div>
           </div>
