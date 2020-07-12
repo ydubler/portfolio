@@ -1,5 +1,5 @@
 body {
-  background-color: aquamarine;
+  background-color: white;
   text-align: center;
 }
 
@@ -80,16 +80,6 @@ body {
   margin-bottom: 20px;
 }
 
-.main-content-mobile-2 {
-  display: inline-block;
-  background-color: white;
-  border: solid 3px #4985ff;
-  font-size: 16px;
-  font-family: "Open Sans", sans-serif;
-  color: darkblue;
-  border-radius: 20px;
-}
-
 .main-content-title {
   display: block;
   margin: 20px;
@@ -101,14 +91,14 @@ body {
 }
 
 .main-content-item {
-  background-color: rgb(212, 255, 253);
+  background-color: #4985ff;
   display: block;
-  margin: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   font-family: "Montserrat", cursive;
   font-size: 16px;
   text-align: left;
   border: solid 2px black;
-  border-radius: 10px;
 }
 
 .main-content-webapp-title {
@@ -119,6 +109,7 @@ body {
   display: inline-block;
   font-weight: bold;
   font-size: 20px;
+  color: white;
 }
 
 .main-content-webapp-techstack {
@@ -127,19 +118,18 @@ body {
   padding: 5px;
   margin: 5px;
   border-radius: 10px;
-  background-color: darkblue;
-  color: cyan;
+  background-color: orangered;
+  color: white;
   font-size: 14px;
 }
 
 .main-content-webapp-feature {
   display: inline-block;
   border: solid 2px black;
-  padding: 5px;
+  padding: 2px;
   margin: 5px;
-  border-radius: 10px;
-  background-color: royalblue;
-  color: cyan;
+  background-color: springgreen;
+  color: black;
   font-size: 14px;
 }
 
