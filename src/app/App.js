@@ -12,6 +12,7 @@ import "../../public/css/Fonts.css"; // CSS Fonts
 
 function App() {
   // State
+  const [pageWidth, setPageWidth] = useState(0);
   const [windowInnerWidth, setWindowInnerWidth] = useState(0);
   const [contentWidthMax, setContentWidthMax] = useState(0);
   const [contentWidth, setContentWidth] = useState(0);
@@ -78,11 +79,18 @@ function App() {
     setContentWidth(contentWidth);
   }
 
+  function getWindowWidth() {
+    const pageWidth = document.getElementById("page-width").offsetWidth;
+    setPageWidth(pageWidth);
+  }
+
   return (
     <>
       {isBrowser && (
         <>
-          <div className="one-hundred"></div>
+          <div id="page-width" className="one-hundred">
+            {pageWidth}
+          </div>
           <div
             className="name"
             style={{ minWidth: isBrowser ? "400px" : undefined }}
@@ -116,7 +124,9 @@ function App() {
 
       {isMobile && (
         <>
-          <div className="one-hundred"></div>
+          <div id="page-width" className="one-hundred">
+            {pageWidth}
+          </div>
           <div className="name">
             <div className="name-text">Yuri Dubler's</div>
           </div>
