@@ -93,8 +93,11 @@ body {
 .main-content-item {
   background-color: #4985ff;
   display: block;
+  border-right: solid 2px white;
+  border-left: solid 2px white;
   margin-top: 20px;
   margin-bottom: 20px;
+  padding-bottom: 5px;
   font-family: "Montserrat", cursive;
   font-size: 16px;
   text-align: left;

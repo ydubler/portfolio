@@ -116,7 +116,7 @@ function App() {
               minWidth: isBrowser ? "400px" : undefined,
             }}
           >
-            <div className="main-content-title">Web Applications</div>
+            <div className="main-content-title">Web Apps</div>
             <div className="main-content-item">
               <div className="main-content-webapp-title">GameStats</div>
               <div className="main-content-webapp-techstack">REACT</div>
@@ -137,6 +137,25 @@ function App() {
               <div className="main-content-webapp-feature">RESPONSIVE</div>
               <div className="main-content-webapp-descr">
                 This web-application features...
+              </div>
+            </div>
+          </div>
+          <div
+            className="main-content"
+            style={{
+              width: contentWidth,
+              minWidth: isBrowser ? "400px" : undefined,
+            }}
+          >
+            <div className="main-content-title">Front End</div>
+            <div className="main-content-item">
+              <div className="main-content-webapp-title">Navbar</div>
+              <div className="main-content-webapp-techstack">REACT</div>
+              <div className="main-content-webapp-techstack">SVG</div>
+              <div className="main-content-webapp-feature">RESPONSIVE</div>
+              <div className="main-content-webapp-feature">ANIMATED</div>
+              <div className="main-content-webapp-descr">
+                This NavBar has been carefully crafted to be eye candy.
               </div>
             </div>
           </div>
@@ -154,7 +173,7 @@ function App() {
             className="main-content-mobile"
             style={{ width: pageWidth - 46 }}
           >
-            <div className="main-content-title">Web Applications</div>
+            <div className="main-content-title">Web Apps</div>
             <div className="main-content-item">
               <div className="main-content-webapp-title">GameStats</div>
               <div className="main-content-webapp-techstack">REACT</div>
