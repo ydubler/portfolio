@@ -12,6 +12,8 @@ import "../../public/css/Fonts.css"; // CSS Fonts
 
 function App() {
   // State
+  const [browserMobile, setBrowserMobile] = useState(false);
+  const [browserDesktop, setBrowserDesktop] = useState(false);
   const [pageWidth, setPageWidth] = useState(0);
   const [windowInnerWidth, setWindowInnerWidth] = useState(0);
   const [contentWidthMax, setContentWidthMax] = useState(0);
@@ -21,6 +23,7 @@ function App() {
   // Similar to componentDidMount and componentDidUpdate:
   useEffect(() => {
     // Update the document title using the browser API
+    determineBrowserType();
     getWindowWidth();
     getContentWidthMax();
     getContentWidth();
@@ -39,6 +42,14 @@ function App() {
   function getWindowWidth() {
     const windowWidth = window.innerWidth;
     setWindowInnerWidth(windowWidth);
+  }
+
+  function determineBrowserType() {
+    if (isMobile) {
+      setBrowserMobile(true);
+    } else {
+      setBrowserDesktop(true);
+    }
   }
 
   function getContentWidthMax() {
@@ -86,67 +97,68 @@ function App() {
 
   return (
     <>
-      {/* <BrowserView>
-        <div id="page-width" className="one-hundred">
-          {pageWidth}
-        </div>
-        <div
-          className="name"
-          style={{ minWidth: isBrowser ? "400px" : undefined }}
-        >
-          <div className="name-text">Yuri Dubler</div>
-        </div>
-        <div
-          className="portfolio"
-          style={{ minWidth: isBrowser ? "400px" : undefined }}
-        >
-          <div className="portfolio-text">Portfolio</div>
-        </div>
-        <div
-          className="main-content"
-          style={{
-            width: contentWidth,
-            minWidth: isBrowser ? "400px" : undefined,
-          }}
-        >
-          <div className="main-content-title">Web Applications</div>
-          <div className="main-content-text">
-            Please browse the following list of web-applications: BROWSER.
-            <br />
-            contentWidth: {contentWidth}
-            <br />
-            contentWidthMax: {contentWidthMax}
+      <div id="page-width" className="one-hundred">
+        {pageWidth}
+      </div>
+      {browserDesktop && (
+        <>
+          <div
+            className="name"
+            style={{ minWidth: isBrowser ? "400px" : undefined }}
+          >
+            <div className="name-text">Yuri Dubler</div>
           </div>
-        </div>
-      </BrowserView> */}
+          <div
+            className="portfolio"
+            style={{ minWidth: isBrowser ? "400px" : undefined }}
+          >
+            <div className="portfolio-text">Portfolio</div>
+          </div>
+          <div
+            className="main-content"
+            style={{
+              width: contentWidth,
+              minWidth: isBrowser ? "400px" : undefined,
+            }}
+          >
+            <div className="main-content-title">Web Applications</div>
+            <div className="main-content-text">
+              Please browse the following list of web-applications: BROWSER.
+              <br />
+              contentWidth: {contentWidth}
+              <br />
+              contentWidthMax: {contentWidthMax}
+            </div>
+          </div>
+        </>
+      )}
 
-      <MobileView>
-        <div id="page-width" className="one-hundred">
-          {pageWidth}
-        </div>
-        <div className="name">
-          <div className="name-text">Yuri Dubler</div>
-        </div>
-        <div className="portfolio">
-          <div className="portfolio-text">Portfolio</div>
-        </div>
-        <div
-          className="main-content-mobile-2"
-          style={{ width: pageWidth - 46 }}
-        >
-          <div className="main-content-title">Web Applications</div>
-          <div className="main-content-text">
-            Please browse the following list of web-applications: MOBILE.
-            <br />
-            contentWidth: {contentWidth}
-            <br />
-            contentWidthMax: {contentWidthMax}
-            <br />
-            {isIOS && isSafari && <>"IS IOS / SAFARI"</>}
-            <br />
+      {browserMobile && (
+        <>
+          <div className="name">
+            <div className="name-text">Yuri Dubler</div>
           </div>
-        </div>
-      </MobileView>
+          <div className="portfolio">
+            <div className="portfolio-text">Portfolio</div>
+          </div>
+          <div
+            className="main-content-mobile"
+            style={{ width: pageWidth - 46 }}
+          >
+            <div className="main-content-title">Web Applications</div>
+            <div className="main-content-text">
+              Please browse the following list of web-applications: MOBILE.
+              <br />
+              contentWidth: {contentWidth}
+              <br />
+              contentWidthMax: {contentWidthMax}
+              <br />
+              {isIOS && isSafari && <>"IS IOS / SAFARI"</>}
+              <br />
+            </div>
+          </div>
+        </>
+      )}
 
       {/* <BrowserView>
         <div className="name" style={{ minWidth: "400px" }}>
