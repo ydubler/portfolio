@@ -145,16 +145,15 @@ function App() {
           >
             <div className="main-content-title">Web Applications</div>
             <div className="main-content-item">
-              Please browse the following list of web-applications: MOBILE.
-              <br />
-              contentWidth: {contentWidth}
-              <br />
-              contentWidthMax: {contentWidthMax}
-              <br />
-              {isIOS && isSafari && <>"IS IOS / SAFARI"</>}
-              <br />
-              {isMobileSafari && <>MOBILE SAFARI</>}
-              <br />
+              <div className="main-content-webapp-title">GameStats</div>
+              <div className="main-content-webapp-techstack">REACT</div>
+              <div className="main-content-webapp-techstack">NODE</div>
+              <div className="main-content-webapp-techstack">EXPRESS</div>
+              <div className="main-content-webapp-techstack">POSTGRESQL</div>
+              <div className="main-content-webapp-feature">RESPONSIVE</div>
+              <div className="main-content-webapp-descr">
+                This web-application features...
+              </div>
             </div>
           </div>
         </>
