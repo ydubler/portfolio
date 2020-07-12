@@ -47,8 +47,8 @@ body {
 
 .main-content {
   display: inline-block;
-  background-color: white;
-  border: solid 3px #4985ff;
+  background-color: ivory;
+  border: solid 3px black;
   margin-top: 20px;
   margin-left: 20px;
   margin-right: 20px;
@@ -60,8 +60,8 @@ body {
 
 .main-content-mobile {
   display: inline-block;
-  background-color: white;
-  border: solid 3px #4985ff;
+  background-color: ivory;
+  border: solid 3px black;
   font-size: 16px;
   font-family: "Open Sans", sans-serif;
   color: darkblue;
@@ -93,7 +93,6 @@ body {
 
 .main-content-item-title {
   display: inline-block;
-  width: 100%;
   padding: 10px;
   text-align: left;
   display: inline-block;
@@ -109,6 +108,17 @@ body {
   margin: 5px;
   border-radius: 10px;
   background-color: #1e5cd6;
+  color: white;
+  font-size: 14px;
+}
+
+.main-content-item-skill {
+  border: solid 2px white;
+  display: inline-block;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 10px;
+  background-color: #9c1ed6;
   color: white;
   font-size: 14px;
 }

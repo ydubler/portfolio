@@ -118,33 +118,33 @@ function App() {
           >
             <div className="main-content-title">Web Apps</div>
             <div className="main-content-item">
-              <div className="main-content-item-title">GameStats</div>
+              <div className="main-content-item-title">Game-Stats</div>
+              <br />
               <div className="main-content-item-techstack">REACT</div>
               <div className="main-content-item-techstack">NODE</div>
               <div className="main-content-item-techstack">EXPRESS</div>
               <div className="main-content-item-techstack">POSTGRESQL</div>
-              <br />
               <div className="main-content-item-feature">RESPONSIVE</div>
+              <div className="main-content-item-feature">SVG</div>
               <div className="main-content-item-feature">DATA VIS</div>
-              <div className="main-content-item-feature">USER SESSIONS</div>
               <div className="main-content-item-feature">LOGIN SYSTEM</div>
               <div className="main-content-item-feature">ADMIN CONTROLS</div>
-              <div className="main-content-item-feature">
-                INVENTORY MANAGEMENT
-              </div>
-              <div className="main-content-item-feature">ONLINE STORE</div>
               <div className="main-content-item-descr">
-                This web-application features...
+                This web-application visualizes numerous statistics of my board
+                game group.
               </div>
             </div>
             <div className="main-content-item">
-              <div className="main-content-item-title">GameStats</div>
+              <div className="main-content-item-title">Mock Website</div>
               <div className="main-content-item-techstack">REACT</div>
               <div className="main-content-item-techstack">NODE</div>
               <div className="main-content-item-techstack">EXPRESS</div>
               <div className="main-content-item-techstack">POSTGRESQL</div>
               <br />
               <div className="main-content-item-feature">RESPONSIVE</div>
+              <div className="main-content-item-feature">LOGIN SYSTEM</div>
+              <div className="main-content-item-feature">DATA VIS</div>
+              <div className="main-content-item-feature">USER-SESSIONS</div>
               <div className="main-content-item-descr">
                 This web-application features...
               </div>
@@ -165,8 +165,8 @@ function App() {
               <div className="main-content-item-feature">RESPONSIVE</div>
               <div className="main-content-item-feature">ANIMATED</div>
               <div className="main-content-item-descr">
-                This NavBar attracts and engages users with it's detailed SVG
-                animations.
+                This NavBar has been crafted to attract and engages users with
+                SVG animations.
               </div>
             </div>
             <div className="main-content-item">
