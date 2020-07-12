@@ -180,6 +180,7 @@ function App() {
               <div className="main-content-item-title">Collapsing Sidebar</div>
               <br />
               <div className="main-content-item-techstack">REACT</div>
+              <br />
               <div className="main-content-item-feature">RECURSIVE</div>
               <div className="main-content-item-descr">
                 This collapsing Sidebar populates a dynamic list recursively.
@@ -210,6 +211,7 @@ function App() {
               <div className="main-content-item-techstack">NODE</div>
               <div className="main-content-item-techstack">EXPRESS</div>
               <div className="main-content-item-techstack">POSTGRESQL</div>
+              <br />
               <div className="main-content-item-feature">RESPONSIVE</div>
               <div className="main-content-item-feature">SVG</div>
               <div className="main-content-item-feature">DATA VIS</div>
@@ -249,6 +251,7 @@ function App() {
               <br />
               <div className="main-content-item-techstack">REACT</div>
               <div className="main-content-item-techstack">SVG</div>
+              <br />
               <div className="main-content-item-feature">RESPONSIVE</div>
               <div className="main-content-item-feature">ANIMATED</div>
               <div className="main-content-item-descr">
@@ -260,6 +263,7 @@ function App() {
               <div className="main-content-item-title">Collapsing Sidebar</div>
               <br />
               <div className="main-content-item-techstack">REACT</div>
+              <br />
               <div className="main-content-item-feature">RECURSIVE</div>
               <div className="main-content-item-descr">
                 This collapsing Sidebar populates a dynamic list recursively.
