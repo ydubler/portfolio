@@ -69,17 +69,6 @@ body {
   border-top-left-radius: 20px;
 }
 
-.main-content-mobile {
-  display: inline-block;
-  background-color: rgb(255, 255, 240);
-  border: solid 3px black;
-  font-size: 16px;
-  font-family: "Open Sans", sans-serif;
-  color: darkblue;
-  border-radius: 20px;
-  margin-top: 20px;
-}
-
 .main-content-title {
   display: block;
   padding: 20px;
