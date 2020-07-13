@@ -134,7 +134,6 @@ function App() {
           {webAppsOpen && (
             <>
               <div className="main-content-item">
-                <div class="main-content-item-br"></div>
                 <div className="main-content-item-title">Game-Stats</div>
                 <br />
                 <div className="main-content-item-techstack">REACT</div>
