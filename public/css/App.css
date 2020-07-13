@@ -67,8 +67,8 @@ body {
 
 .main-content-title {
   background: linear-gradient(0.25turn, rgb(192, 192, 155), ivory);
-  border-top-right-radius: 20px;
-  border-top-left-radius: 20px;
+  border-top-right-radius: 16px;
+  border-top-left-radius: 16px;
   display: block;
   padding: 20px;
   font-family: "Open Sans", cursive;
@@ -96,7 +96,7 @@ body {
   text-align: left;
   padding: 10px;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 40px;
   color: black;
   text-decoration: underline;
 }
