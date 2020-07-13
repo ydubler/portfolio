@@ -1389,7 +1389,7 @@ export default class Browser_NavBar extends React.Component {
         <div style={{ textAlign: "left", maxWidth: "800px" }}>
           <h1>RESPONSIVE ANIMATED SVG NAVBAR</h1>
           <h4 style={{ color: "red", textDecoration: "underline" }}>
-            BROWSER ONLY
+            DESKTOP BROWSER ONLY
           </h4>
           <h4 style={{ color: "red", textDecoration: "underline" }}>
             Be sure to change the screen width to see how the Navbar changes!
@@ -1397,7 +1397,10 @@ export default class Browser_NavBar extends React.Component {
           In addition to a detailed gradient-based color scheme, this Navbar
           features a smooth animated SVG interface and precision placement of
           suboptions. In addition, the appearance of the entire Navbar can be
-          modified using the control variables below.
+          modified using the control variables below. NOTE: The Navbar is
+          intended to function properly with values close to the original
+          control variable values. Large changes can disrupt the appearance of
+          the Navbar.
           <h3> NAVBAR CONTROL VARIABLES</h3>
           Changing these will modify the appearance of the Navbar:
           <br />

@@ -11,7 +11,7 @@ function SidebarView() {
         <div className="portfolio-name">Yuri Dubler /&nbsp;</div>
         <div className="portfolio-text">Portfolio</div>
       </div>
-      <div style={{ textAlign: "left" }}>
+      <div style={{ textAlign: "left", maxWidth: "800px" }}>
         <h1>Recursive Collapsing Sidebar</h1>
         The collapsing menu is based on a tree and its options and suboptions
         are displayed recursively. It can be configured to be black and white,

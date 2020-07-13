@@ -128,7 +128,7 @@ function App() {
               setWebAppsOpen(!webAppsOpen);
             }}
           >
-            Web Apps
+            Web Apps (2)
           </div>
           {webAppsOpen && (
             <>
@@ -189,7 +189,7 @@ function App() {
               setFrontEndCompsOpen(!frontEndCompsOpen);
             }}
           >
-            Front End Components
+            Front End Components (2)
           </div>
           {frontEndCompsOpen && (
             <>
@@ -248,7 +248,7 @@ function App() {
               setDemonstrationsOpen(!demonstrationsOpen);
             }}
           >
-            Demonstrations
+            Demonstrations (2)
           </div>
           {demonstrationsOpen && (
             <>
