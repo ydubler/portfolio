@@ -24,6 +24,7 @@ function App() {
   // Nav State
   const [webAppsOpen, setWebAppsOpen] = useState(false);
   const [frontEndCompsOpen, setFrontEndCompsOpen] = useState(false);
+  const [demonstrationsOpen, setDemonstrationsOpen] = useState(false);
 
   // Similar to componentDidMount and componentDidUpdate:
   useEffect(() => {
@@ -101,7 +102,7 @@ function App() {
   return (
     <>
       <div id="page-width" className="one-hundred">
-        {isBrowser ? "Desktop Browser" : "Mobile"}
+        {isBrowser ? "Desktop Browser" : "Mobile Browser"}
       </div>
       {/* DESKTOP BROWSER */}
 
@@ -134,12 +135,14 @@ function App() {
           {webAppsOpen && (
             <>
               <div className="main-content-item">
+                <div className="main-content-item-br"></div>
                 <div className="main-content-item-title">Game-Stats</div>
                 <br />
                 <div className="main-content-item-techstack">REACT</div>
                 <div className="main-content-item-techstack">NODE</div>
                 <div className="main-content-item-techstack">EXPRESS</div>
                 <div className="main-content-item-techstack">POSTGRESQL</div>
+                <div className="main-content-item-techstack">HEROKU</div>
                 <br />
                 <div className="main-content-item-feature">RESPONSIVE</div>
                 <div className="main-content-item-feature">SVG</div>
@@ -161,6 +164,7 @@ function App() {
                 <div className="main-content-item-techstack">NODE</div>
                 <div className="main-content-item-techstack">EXPRESS</div>
                 <div className="main-content-item-techstack">POSTGRESQL</div>
+                <div className="main-content-item-techstack">HEROKU</div>
                 <br />
                 <div className="main-content-item-feature">RESPONSIVE</div>
                 <div className="main-content-item-feature">LOGIN SYSTEM</div>
@@ -219,6 +223,65 @@ function App() {
                 <div className="main-content-item-feature">RECURSIVE</div>
                 <div className="main-content-item-descr">
                   This collapsing Sidebar populates a dynamic list recursively.
+                </div>
+              </div>
+              <div className="main-content-item-br"></div>
+            </>
+          )}
+        </div>
+
+        <div
+          className="main-content"
+          style={{
+            width: browserMobile ? pageWidth - 46 : contentWidth,
+            minWidth: browserMobile ? "0px" : "400px",
+            fontWeight: demonstrationsOpen ? "bold" : undefined,
+            backgroundColor: demonstrationsOpen
+              ? "rgb(219, 219, 206)"
+              : "ivory",
+            borderColor: demonstrationsOpen ? "black" : "darkgray",
+          }}
+        >
+          <div
+            className="main-content-title"
+            onClick={() => {
+              setDemonstrationsOpen(!demonstrationsOpen);
+            }}
+          >
+            Demonstrations
+          </div>
+          {demonstrationsOpen && (
+            <>
+              <div className="main-content-item-br"></div>
+              <div className="main-content-item">
+                <div className="main-content-item-title">Filters</div>
+                <br />
+                <div className="main-content-item-techstack">REACT</div>
+                <div className="main-content-item-techstack">SVG</div>
+                <br />
+                <div className="main-content-item-feature">RESPONSIVE</div>
+                <div className="main-content-item-feature">IMAGE ANALYSIS</div>
+                <br />
+                <div className="main-content-item-descr">
+                  This mini-app allows the user to define a filter in order to
+                  analyze images for patterns.
+                </div>
+              </div>
+              <div className="main-content-item-br"></div>
+              <div className="main-content-item">
+                <div className="main-content-item-title">Shortest Paths</div>
+                <br />
+                <div className="main-content-item-techstack">REACT</div>
+                <div className="main-content-item-techstack">SVG</div>
+                <br />
+                <div className="main-content-item-feature">RESPONSIVE</div>
+                <div className="main-content-item-feature">
+                  GRAPH ALGORITHMS
+                </div>
+                <br />
+                <div className="main-content-item-descr">
+                  This mini-app allows the user to define a graph and apply a
+                  pathing algorithm to said path.
                 </div>
               </div>
               <div className="main-content-item-br"></div>
