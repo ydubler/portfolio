@@ -101,140 +101,135 @@ function App() {
   return (
     <>
       <div id="page-width" className="one-hundred">
-        {pageWidth}
+        {isBrowser ? "Desktop Browser" : "Mobile"}
       </div>
       {/* DESKTOP BROWSER */}
-      {browserDesktop && (
-        <>
+
+      <>
+        <div
+          className="portfolio"
+          style={{ minWidth: browserDesktop ? "400px" : undefined }}
+        >
+          <div className="portfolio-name">Yuri Dubler /&nbsp;</div>
+          <div className="portfolio-text">Portfolio</div>
+        </div>
+        <div
+          className="main-content"
+          style={{
+            width: browserMobile ? pageWidth - 46 : contentWidth,
+            minWidth: isBrowser ? "400px" : undefined,
+            fontWeight: webAppsOpen ? "bold" : undefined,
+            backgroundColor: webAppsOpen ? "rgb(219, 219, 206)" : "ivory",
+            borderColor: webAppsOpen ? "black" : "darkgray",
+          }}
+        >
           <div
-            className="portfolio"
-            style={{ minWidth: isBrowser ? "400px" : undefined }}
-          >
-            <div className="portfolio-name">Yuri Dubler /&nbsp;</div>
-            <div className="portfolio-text">Portfolio</div>
-          </div>
-          <div
-            className="main-content"
-            style={{
-              width: contentWidth,
-              minWidth: isBrowser ? "400px" : undefined,
-              fontWeight: webAppsOpen ? "bold" : undefined,
-              backgroundColor: webAppsOpen ? "rgb(219, 219, 206)" : "ivory",
+            className="main-content-title"
+            onClick={() => {
+              setWebAppsOpen(!webAppsOpen);
             }}
           >
-            <div
-              className="main-content-title"
-              onClick={() => {
-                setWebAppsOpen(!webAppsOpen);
-              }}
-            >
-              Web Apps
-            </div>
-            {webAppsOpen && (
-              <>
-                <div className="main-content-item">
-                  <div class="main-content-item-br"></div>
-                  <div className="main-content-item-title">Game-Stats</div>
-                  <br />
-                  <div className="main-content-item-techstack">REACT</div>
-                  <div className="main-content-item-techstack">NODE</div>
-                  <div className="main-content-item-techstack">EXPRESS</div>
-                  <div className="main-content-item-techstack">POSTGRESQL</div>
-                  <br />
-                  <div className="main-content-item-feature">RESPONSIVE</div>
-                  <div className="main-content-item-feature">SVG</div>
-                  <div className="main-content-item-feature">DATA VIS</div>
-                  <div className="main-content-item-feature">
-                    ADMIN CONTROLS
-                  </div>
-                  <div className="main-content-item-descr">
-                    This web-application uses SVG to visualize numerous
-                    statistics associated with my board game group. The data
-                    driving the statistics (stored in a PostgreSQL database)
-                    includes: meeting dates, players in attendance, choice of
-                    game, game winners, and descriptions.
-                  </div>
-                </div>
-                <div className="main-content-item-br"></div>
-                <div className="main-content-item">
-                  <div className="main-content-item-title">Mock Website</div>
-                  <br />
-                  <div className="main-content-item-techstack">REACT</div>
-                  <div className="main-content-item-techstack">NODE</div>
-                  <div className="main-content-item-techstack">EXPRESS</div>
-                  <div className="main-content-item-techstack">POSTGRESQL</div>
-                  <br />
-                  <div className="main-content-item-feature">RESPONSIVE</div>
-                  <div className="main-content-item-feature">LOGIN SYSTEM</div>
-                  <div className="main-content-item-feature">USER SESSIONS</div>
-                  <div className="main-content-item-feature">PROFILE</div>
-                  <div className="main-content-item-descr">
-                    This responsive web-application features a login system,
-                    user sessions, and profile page.
-                  </div>
-                </div>
-                <div className="main-content-item-br"></div>
-              </>
-            )}
+            Web Apps
           </div>
+          {webAppsOpen && (
+            <>
+              <div className="main-content-item">
+                <div class="main-content-item-br"></div>
+                <div className="main-content-item-title">Game-Stats</div>
+                <br />
+                <div className="main-content-item-techstack">REACT</div>
+                <div className="main-content-item-techstack">NODE</div>
+                <div className="main-content-item-techstack">EXPRESS</div>
+                <div className="main-content-item-techstack">POSTGRESQL</div>
+                <br />
+                <div className="main-content-item-feature">RESPONSIVE</div>
+                <div className="main-content-item-feature">SVG</div>
+                <div className="main-content-item-feature">DATA VIS</div>
+                <div className="main-content-item-feature">ADMIN CONTROLS</div>
+                <div className="main-content-item-descr">
+                  This web-application uses SVG to visualize numerous statistics
+                  associated with my board game group. The data driving the
+                  statistics (stored in a PostgreSQL database) includes: meeting
+                  dates, players in attendance, choice of game, game winners,
+                  and descriptions.
+                </div>
+              </div>
+              <div className="main-content-item-br"></div>
+              <div className="main-content-item">
+                <div className="main-content-item-title">Mock Website</div>
+                <br />
+                <div className="main-content-item-techstack">REACT</div>
+                <div className="main-content-item-techstack">NODE</div>
+                <div className="main-content-item-techstack">EXPRESS</div>
+                <div className="main-content-item-techstack">POSTGRESQL</div>
+                <br />
+                <div className="main-content-item-feature">RESPONSIVE</div>
+                <div className="main-content-item-feature">LOGIN SYSTEM</div>
+                <div className="main-content-item-feature">USER SESSIONS</div>
+                <div className="main-content-item-feature">PROFILE</div>
+                <div className="main-content-item-descr">
+                  This responsive web-application features a login system, user
+                  sessions, and profile page.
+                </div>
+              </div>
+              <div className="main-content-item-br"></div>
+            </>
+          )}
+        </div>
+        <div
+          className="main-content"
+          style={{
+            width: browserMobile ? pageWidth - 46 : contentWidth,
+            minWidth: isBrowser ? "400px" : undefined,
+            fontWeight: frontEndCompsOpen ? "bold" : undefined,
+            backgroundColor: frontEndCompsOpen ? "rgb(219, 219, 206)" : "ivory",
+            borderColor: frontEndCompsOpen ? "black" : "darkgray",
+          }}
+        >
           <div
-            className="main-content"
-            style={{
-              width: contentWidth,
-              minWidth: isBrowser ? "400px" : undefined,
-              fontWeight: frontEndCompsOpen ? "bold" : undefined,
-              backgroundColor: frontEndCompsOpen
-                ? "rgb(219, 219, 206)"
-                : "ivory",
+            className="main-content-title"
+            onClick={() => {
+              setFrontEndCompsOpen(!frontEndCompsOpen);
             }}
           >
-            <div
-              className="main-content-title"
-              onClick={() => {
-                setFrontEndCompsOpen(!frontEndCompsOpen);
-              }}
-            >
-              Front End Components
-            </div>
-            {frontEndCompsOpen && (
-              <>
-                <div className="main-content-item-br"></div>
-                <div className="main-content-item">
-                  <div className="main-content-item-title">Navbar</div>
-                  <br />
-                  <div className="main-content-item-techstack">REACT</div>
-                  <div className="main-content-item-techstack">SVG</div>
-                  <br />
-                  <div className="main-content-item-feature">RESPONSIVE</div>
-                  <div className="main-content-item-feature">SVG</div>
-                  <div className="main-content-item-descr">
-                    This NavBar has been crafted to attract and engages users
-                    with SVG animations.
-                  </div>
-                </div>
-                <div className="main-content-item-br"></div>
-                <div className="main-content-item">
-                  <div className="main-content-item-title">
-                    Collapsing Sidebar
-                  </div>
-                  <br />
-                  <div className="main-content-item-techstack">REACT</div>
-                  <br />
-                  <div className="main-content-item-feature">RECURSIVE</div>
-                  <div className="main-content-item-descr">
-                    This collapsing Sidebar populates a dynamic list
-                    recursively.
-                  </div>
-                </div>
-                <div className="main-content-item-br"></div>
-              </>
-            )}
+            Front End Components
           </div>
-        </>
-      )}
+          {frontEndCompsOpen && (
+            <>
+              <div className="main-content-item-br"></div>
+              <div className="main-content-item">
+                <div className="main-content-item-title">Navbar</div>
+                <br />
+                <div className="main-content-item-techstack">REACT</div>
+                <div className="main-content-item-techstack">SVG</div>
+                <br />
+                <div className="main-content-item-feature">RESPONSIVE</div>
+                <div className="main-content-item-descr">
+                  This NavBar has been crafted to attract and engages users with
+                  SVG animations.
+                </div>
+              </div>
+              <div className="main-content-item-br"></div>
+              <div className="main-content-item">
+                <div className="main-content-item-title">
+                  Collapsing Sidebar
+                </div>
+                <br />
+                <div className="main-content-item-techstack">REACT</div>
+                <br />
+                <div className="main-content-item-feature">RECURSIVE</div>
+                <div className="main-content-item-descr">
+                  This collapsing Sidebar populates a dynamic list recursively.
+                </div>
+              </div>
+              <div className="main-content-item-br"></div>
+            </>
+          )}
+        </div>
+      </>
 
       {/* MOBILE BROWSER */}
-      {browserMobile && (
+      {/* {browserMobile && (
         <>
           <div className="portfolio">
             <div className="portfolio-name">Yuri Dubler /&nbsp;</div>
@@ -246,9 +241,17 @@ function App() {
               width: pageWidth - 46,
               fontWeight: webAppsOpen ? "bold" : undefined,
               backgroundColor: webAppsOpen ? "rgb(219, 219, 206)" : "ivory",
+              borderColor: webAppsOpen ? "black" : "darkgray",
             }}
           >
-            <div className="main-content-title">Web Apps</div>
+            <div
+              className="main-content-title"
+              onClick={() => {
+                setWebAppsOpen(!webAppsOpen);
+              }}
+            >
+              Web Apps
+            </div>
             {webAppsOpen && (
               <>
                 <div className="main-content-item">
@@ -304,9 +307,17 @@ function App() {
               backgroundColor: frontEndCompsOpen
                 ? "rgb(219, 219, 206)"
                 : "ivory",
+              borderColor: frontEndCompsOpen ? "black" : "darkgray",
             }}
           >
-            <div className="main-content-title">Front End Components</div>
+            <div
+              className="main-content-title"
+              onClick={() => {
+                setFrontEndCompsOpen(!frontEndCompsOpen);
+              }}
+            >
+              Front End Components
+            </div>
             {frontEndCompsOpen && (
               <>
                 <div className="main-content-item-br"></div>
@@ -319,8 +330,8 @@ function App() {
                   <div className="main-content-item-feature">RESPONSIVE</div>
                   <div className="main-content-item-feature">ANIMATED</div>
                   <div className="main-content-item-descr">
-                    This NavBar has been crafted to attract and engages users
-                    with SVG animations.
+                    This NavBar has been crafted to attract and engage users
+                    with smooth and polished SVG animations.
                   </div>
                 </div>
                 <div className="main-content-item-br"></div>
@@ -342,7 +353,7 @@ function App() {
             )}
           </div>
         </>
-      )}
+      )} */}
 
       {/* <img src="/public/images/coffee1.jpg"></img> */}
     </>
