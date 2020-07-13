@@ -70,12 +70,20 @@ body {
 
 .main-content-item-title {
   display: inline-block;
-  text-align: left;
   padding: 10px;
   font-weight: bold;
   font-size: 40px;
   color: black;
   text-decoration: underline;
+}
+
+.main-content-item-github {
+  background-color: dodgerblue;
+  display: inline-block;
+  padding: 5px;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 5px;
 }
 
 .main-content-item-techstack {

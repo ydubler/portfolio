@@ -1397,10 +1397,7 @@ export default class Browser_NavBar extends React.Component {
           In addition to a detailed gradient-based color scheme, this Navbar
           features a smooth animated SVG interface and precision placement of
           suboptions. In addition, the appearance of the entire Navbar can be
-          modified using the control variables below. NOTE: The Navbar is
-          intended to function properly with values close to the original
-          control variable values. Large changes can disrupt the appearance of
-          the Navbar.
+          modified using the control variables below.
           <h3> NAVBAR CONTROL VARIABLES</h3>
           Changing these will modify the appearance of the Navbar:
           <br />
@@ -1489,6 +1486,11 @@ export default class Browser_NavBar extends React.Component {
             />
             Rotation: {this.state.c_optionRotationAngle}
           </div>
+          <br />
+          NOTE: The Navbar is intended to function properly within a certain
+          range of values close to the presupplied values. Large changes to
+          these values can disrupt the appearance of the Navbar (and make it
+          appear buggy).
         </div>
       </>
     );

@@ -200,11 +200,21 @@ function App() {
                     SVG Navbar
                   </a>
                 </div>
+
                 <br />
                 <div className="main-content-item-techstack">REACT</div>
                 <div className="main-content-item-techstack">SVG</div>
                 <br />
                 <div className="main-content-item-feature">RESPONSIVE</div>
+                <br />
+                <div className="main-content-item-github">
+                  <a
+                    target="_blank"
+                    href="https://github.com/ydubler/portfolio/tree/master/src/app/front-end-components/Navbar"
+                  >
+                    View On Github
+                  </a>
+                </div>
                 <div className="main-content-item-descr">
                   This NavBar has been carefully crafted to attract and engage
                   users with smooth SVG animations.
@@ -221,6 +231,15 @@ function App() {
                 <div className="main-content-item-techstack">REACT</div>
                 <br />
                 <div className="main-content-item-feature">RECURSIVE</div>
+                <br />
+                <div className="main-content-item-github">
+                  <a
+                    target="_blank"
+                    href="https://github.com/ydubler/portfolio/tree/master/src/app/front-end-components/Sidebar"
+                  >
+                    View On Github
+                  </a>
+                </div>
                 <div className="main-content-item-descr">
                   This collapsing Sidebar displays a tree of options
                   recursively.
