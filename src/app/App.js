@@ -119,7 +119,6 @@ function App() {
           style={{
             width: browserMobile ? pageWidth - 46 : contentWidth,
             minWidth: browserMobile ? "0px" : "400px",
-            fontWeight: webAppsOpen ? "bold" : undefined,
             backgroundColor: webAppsOpen ? "rgb(219, 219, 206)" : "ivory",
             borderColor: webAppsOpen ? "black" : "darkgray",
           }}
@@ -184,7 +183,6 @@ function App() {
           style={{
             width: browserMobile ? pageWidth - 46 : contentWidth,
             minWidth: browserMobile ? "0px" : "400px",
-            fontWeight: frontEndCompsOpen ? "bold" : undefined,
             backgroundColor: frontEndCompsOpen ? "rgb(219, 219, 206)" : "ivory",
             borderColor: frontEndCompsOpen ? "black" : "darkgray",
           }}
@@ -235,7 +233,6 @@ function App() {
           style={{
             width: browserMobile ? pageWidth - 46 : contentWidth,
             minWidth: browserMobile ? "0px" : "400px",
-            fontWeight: demonstrationsOpen ? "bold" : undefined,
             backgroundColor: demonstrationsOpen
               ? "rgb(219, 219, 206)"
               : "ivory",
