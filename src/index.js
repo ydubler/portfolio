@@ -11,6 +11,8 @@ import { isBrowser, isMobile } from "react-device-detect";
 
 // React Components
 import App from "./app/App";
+import SidebarView from "./app/front-end-components/SidebarView";
+import NavbarView from "./app/front-end-components/NavbarView";
 
 //document.body.style.fontFamily = "Helvetica Neue";
 //document.body.style.margin = 0;
@@ -18,7 +20,17 @@ import App from "./app/App";
 // Hydrate the DOM, choosing what to render based on the provided Route Path (like "/portfolio")
 ReactDOM.hydrate(
   <>
-    <App />
+    <BrowserRouter>
+      <Route exact path="/">
+        <App />
+      </Route>
+      <Route exact path="/front-end-components/sidebar">
+        <SidebarView />
+      </Route>
+      <Route exact path="/front-end-components/navbar">
+        <NavbarView />
+      </Route>
+    </BrowserRouter>
   </>,
   document.getElementById("mountnode")
 );

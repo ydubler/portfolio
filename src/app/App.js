@@ -10,6 +10,7 @@ import {
 } from "react-device-detect";
 
 import "../../public/css/App.css"; // CSS
+import "../../public/css/PortfolioTitle.css";
 import "../../public/css/Fonts.css"; // CSS Fonts
 
 function App() {
@@ -104,8 +105,6 @@ function App() {
       <div id="page-width" className="one-hundred">
         {isBrowser ? "Desktop Browser" : "Mobile Browser"}
       </div>
-      {/* DESKTOP BROWSER */}
-
       <>
         <div
           className="portfolio"
@@ -196,28 +195,35 @@ function App() {
             <>
               <div className="main-content-item-br"></div>
               <div className="main-content-item">
-                <div className="main-content-item-title">Navbar</div>
+                <div className="main-content-item-title">
+                  <a target="_blank" href="/front-end-components/navbar">
+                    SVG Navbar
+                  </a>
+                </div>
                 <br />
                 <div className="main-content-item-techstack">REACT</div>
                 <div className="main-content-item-techstack">SVG</div>
                 <br />
                 <div className="main-content-item-feature">RESPONSIVE</div>
                 <div className="main-content-item-descr">
-                  This NavBar has been crafted to attract and engages users with
-                  SVG animations.
+                  This NavBar has been carefully crafted to attract and engage
+                  users with smooth SVG animations.
                 </div>
               </div>
               <div className="main-content-item-br"></div>
               <div className="main-content-item">
                 <div className="main-content-item-title">
-                  Collapsing Sidebar
+                  <a target="_blank" href="/front-end-components/sidebar">
+                    Collapsing Sidebar
+                  </a>
                 </div>
                 <br />
                 <div className="main-content-item-techstack">REACT</div>
                 <br />
                 <div className="main-content-item-feature">RECURSIVE</div>
                 <div className="main-content-item-descr">
-                  This collapsing Sidebar populates a dynamic list recursively.
+                  This collapsing Sidebar displays a tree of options
+                  recursively.
                 </div>
               </div>
               <div className="main-content-item-br"></div>

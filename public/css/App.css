@@ -22,29 +22,6 @@ body {
   font-family: "Fondamento", sans-serif;
 }
 
-.portfolio {
-  display: block;
-  width: 100%;
-  height: auto;
-  text-align: center;
-  background: linear-gradient(orangered, rgb(255, 148, 49));
-  background-color: orangered;
-}
-
-.portfolio-name {
-  display: inline-block;
-  font-family: "Open Sans", sans-serif;
-  font-size: 40px;
-  color: white;
-}
-
-.portfolio-text {
-  display: inline-block;
-  font-family: "Galada", cursive;
-  font-size: 60px;
-  color: black;
-}
-
 .main-content-item-br {
   display: block;
   width: 100%;
@@ -102,15 +79,16 @@ body {
 }
 
 .main-content-item-techstack {
-  border-left: solid 5px #1e5cd6;
-  border-right: solid 5px #1e5cd6;
+  border-left: solid 5px white;
+  border-right: solid 5px white;
   display: inline-block;
   padding: 10px;
   margin: 5px;
   border-radius: 10px;
-  background-color: #00aeff;
-  color: white;
-  font-size: 14px;
+  background-color: rgb(0, 238, 255);
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .main-content-item-cloud {

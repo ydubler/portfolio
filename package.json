@@ -18,6 +18,7 @@
     "@babel/node": "^7.7.4",
     "@babel/preset-env": "^7.7.6",
     "@babel/preset-react": "^7.7.4",
+    "aphrodite": "^2.4.0",
     "babel-loader": "^8.0.6",
     "bcrypt": "^3.0.7",
     "body-parser": "^1.19.0",
