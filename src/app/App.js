@@ -119,7 +119,7 @@ function App() {
           style={{
             width: browserMobile ? pageWidth - 46 : contentWidth,
             minWidth: browserMobile ? "0px" : "400px",
-            backgroundColor: webAppsOpen ? "rgb(219, 219, 206)" : "ivory",
+            //backgroundColor: webAppsOpen ? "rgb(219, 219, 206)" : "ivory",
             borderColor: webAppsOpen ? "black" : "darkgray",
           }}
         >
@@ -141,12 +141,14 @@ function App() {
                 <div className="main-content-item-techstack">NODE</div>
                 <div className="main-content-item-techstack">EXPRESS</div>
                 <div className="main-content-item-techstack">POSTGRESQL</div>
-                <div className="main-content-item-techstack">HEROKU</div>
+                <div className="main-content-item-cloud">HEROKU</div>
                 <br />
                 <div className="main-content-item-feature">RESPONSIVE</div>
-                <div className="main-content-item-feature">SVG</div>
-                <div className="main-content-item-feature">DATA VIS</div>
-                <div className="main-content-item-feature">ADMIN CONTROLS</div>
+                <div className="main-content-item-feature">SVG ANIMATIONS</div>
+                <div className="main-content-item-feature">LOGIN SYSTEM</div>
+                <div className="main-content-item-feature">
+                  DATA VISUALIZATION
+                </div>
                 <div className="main-content-item-descr">
                   This web-application uses SVG to visualize numerous statistics
                   associated with my board game group. The data driving the
@@ -163,12 +165,7 @@ function App() {
                 <div className="main-content-item-techstack">NODE</div>
                 <div className="main-content-item-techstack">EXPRESS</div>
                 <div className="main-content-item-techstack">POSTGRESQL</div>
-                <div className="main-content-item-techstack">HEROKU</div>
-                <br />
-                <div className="main-content-item-feature">RESPONSIVE</div>
-                <div className="main-content-item-feature">LOGIN SYSTEM</div>
-                <div className="main-content-item-feature">USER SESSIONS</div>
-                <div className="main-content-item-feature">PROFILE</div>
+                <div className="main-content-item-cloud">HEROKU</div>
                 <div className="main-content-item-descr">
                   This responsive web-application features a login system, user
                   sessions, and profile page.

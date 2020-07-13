@@ -27,11 +27,8 @@ body {
   width: 100%;
   height: auto;
   text-align: center;
+  background: linear-gradient(orangered, rgb(255, 148, 49));
   background-color: orangered;
-}
-
-.portfolio:hover .portfolio-text {
-  text-decoration: underline;
 }
 
 .portfolio-name {
@@ -45,7 +42,7 @@ body {
   display: inline-block;
   font-family: "Galada", cursive;
   font-size: 60px;
-  color: rgb(255, 255, 255);
+  color: black;
 }
 
 .main-content-item-br {
@@ -69,6 +66,9 @@ body {
 }
 
 .main-content-title {
+  background: linear-gradient(0.25turn, rgb(192, 192, 155), ivory);
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
   display: block;
   padding: 20px;
   font-family: "Open Sans", cursive;
@@ -82,12 +82,13 @@ body {
 }
 
 .main-content-item {
-  background-color: #4985ff;
+  background: linear-gradient(#7faaff, #0055ff);
   display: block;
   padding-bottom: 5px;
   font-family: "Montserrat", cursive;
   font-size: 16px;
   text-align: left;
+  color: white;
 }
 
 .main-content-item-title {
@@ -101,35 +102,38 @@ body {
 }
 
 .main-content-item-techstack {
-  border: solid 2px white;
+  border-left: solid 5px #1e5cd6;
+  border-right: solid 5px #1e5cd6;
   display: inline-block;
-  padding: 5px;
+  padding: 10px;
   margin: 5px;
   border-radius: 10px;
-  background-color: #1e5cd6;
+  background-color: #00aeff;
   color: white;
   font-size: 14px;
 }
 
-.main-content-item-skill {
-  border: solid 2px white;
+.main-content-item-cloud {
+  border-left: solid 5px white;
+  border-right: solid 5px white;
   display: inline-block;
-  padding: 5px;
+  padding: 10px;
   margin: 5px;
   border-radius: 10px;
-  background-color: pink;
+  background-color: #6e1ed6;
   color: white;
   font-size: 14px;
 }
 
 .main-content-item-feature {
   display: inline-block;
-  border: solid 2px #1e5cd6;
-  padding: 5px;
+  border-top: solid 5px white;
+  border-bottom: solid 5px white;
+  padding: 10px;
   margin: 5px;
   border-radius: 10px;
-  background-color: white;
-  color: black;
+  background-color: #4985ff;
+  color: white;
   font-size: 14px;
 }
 
