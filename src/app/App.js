@@ -21,6 +21,10 @@ function App() {
   const [contentWidthMax, setContentWidthMax] = useState(0);
   const [contentWidth, setContentWidth] = useState(0);
 
+  // Nav State
+  const [webAppsOpen, setWebAppsOpen] = useState(false);
+  const [frontEndCompsOpen, setFrontEndCompsOpen] = useState(false);
+
   // Similar to componentDidMount and componentDidUpdate:
   useEffect(() => {
     // Update the document title using the browser API
@@ -114,78 +118,117 @@ function App() {
             style={{
               width: contentWidth,
               minWidth: isBrowser ? "400px" : undefined,
+              fontWeight: webAppsOpen ? "bold" : undefined,
+              backgroundColor: webAppsOpen ? "rgb(219, 219, 206)" : "ivory",
             }}
           >
-            <div className="main-content-title">Web Apps</div>
-            <div className="main-content-item">
-              <div className="main-content-item-title">Game-Stats</div>
-              <br />
-              <div className="main-content-item-techstack">REACT</div>
-              <div className="main-content-item-techstack">NODE</div>
-              <div className="main-content-item-techstack">EXPRESS</div>
-              <div className="main-content-item-techstack">POSTGRESQL</div>
-              <br />
-              <div className="main-content-item-feature">RESPONSIVE</div>
-              <div className="main-content-item-feature">SVG</div>
-              <div className="main-content-item-feature">DATA VIS</div>
-              <div className="main-content-item-feature">ADMIN CONTROLS</div>
-              <div className="main-content-item-descr">
-                This web-application uses SVG to visualize numerous statistics
-                associated with my board game group. The data driving the
-                statistics (stored in a PostgreSQL database) includes: meeting
-                dates, players in attendance, choice of game, game winners, and
-                descriptions.
-              </div>
+            <div
+              className="main-content-title"
+              onClick={() => {
+                setWebAppsOpen(!webAppsOpen);
+              }}
+            >
+              Web Apps
             </div>
-            <div className="main-content-item">
-              <div className="main-content-item-title">Mock Website</div>
-              <br />
-              <div className="main-content-item-techstack">REACT</div>
-              <div className="main-content-item-techstack">NODE</div>
-              <div className="main-content-item-techstack">EXPRESS</div>
-              <div className="main-content-item-techstack">POSTGRESQL</div>
-              <br />
-              <div className="main-content-item-feature">RESPONSIVE</div>
-              <div className="main-content-item-feature">LOGIN SYSTEM</div>
-              <div className="main-content-item-feature">USER SESSIONS</div>
-              <div className="main-content-item-feature">PROFILE</div>
-              <div className="main-content-item-descr">
-                This responsive web-application features a login system, user
-                sessions, and profile page.
-              </div>
-            </div>
+            {webAppsOpen && (
+              <>
+                <div className="main-content-item">
+                  <div class="main-content-item-br"></div>
+                  <div className="main-content-item-title">Game-Stats</div>
+                  <br />
+                  <div className="main-content-item-techstack">REACT</div>
+                  <div className="main-content-item-techstack">NODE</div>
+                  <div className="main-content-item-techstack">EXPRESS</div>
+                  <div className="main-content-item-techstack">POSTGRESQL</div>
+                  <br />
+                  <div className="main-content-item-feature">RESPONSIVE</div>
+                  <div className="main-content-item-feature">SVG</div>
+                  <div className="main-content-item-feature">DATA VIS</div>
+                  <div className="main-content-item-feature">
+                    ADMIN CONTROLS
+                  </div>
+                  <div className="main-content-item-descr">
+                    This web-application uses SVG to visualize numerous
+                    statistics associated with my board game group. The data
+                    driving the statistics (stored in a PostgreSQL database)
+                    includes: meeting dates, players in attendance, choice of
+                    game, game winners, and descriptions.
+                  </div>
+                </div>
+                <div className="main-content-item-br"></div>
+                <div className="main-content-item">
+                  <div className="main-content-item-title">Mock Website</div>
+                  <br />
+                  <div className="main-content-item-techstack">REACT</div>
+                  <div className="main-content-item-techstack">NODE</div>
+                  <div className="main-content-item-techstack">EXPRESS</div>
+                  <div className="main-content-item-techstack">POSTGRESQL</div>
+                  <br />
+                  <div className="main-content-item-feature">RESPONSIVE</div>
+                  <div className="main-content-item-feature">LOGIN SYSTEM</div>
+                  <div className="main-content-item-feature">USER SESSIONS</div>
+                  <div className="main-content-item-feature">PROFILE</div>
+                  <div className="main-content-item-descr">
+                    This responsive web-application features a login system,
+                    user sessions, and profile page.
+                  </div>
+                </div>
+                <div className="main-content-item-br"></div>
+              </>
+            )}
           </div>
           <div
             className="main-content"
             style={{
               width: contentWidth,
               minWidth: isBrowser ? "400px" : undefined,
+              fontWeight: frontEndCompsOpen ? "bold" : undefined,
+              backgroundColor: frontEndCompsOpen
+                ? "rgb(219, 219, 206)"
+                : "ivory",
             }}
           >
-            <div className="main-content-title">Front End</div>
-            <div className="main-content-item">
-              <div className="main-content-item-title">Navbar</div>
-              <br />
-              <div className="main-content-item-techstack">REACT</div>
-              <div className="main-content-item-techstack">SVG</div>
-              <br />
-              <div className="main-content-item-feature">RESPONSIVE</div>
-              <div className="main-content-item-feature">SVG</div>
-              <div className="main-content-item-descr">
-                This NavBar has been crafted to attract and engages users with
-                SVG animations.
-              </div>
+            <div
+              className="main-content-title"
+              onClick={() => {
+                setFrontEndCompsOpen(!frontEndCompsOpen);
+              }}
+            >
+              Front End Components
             </div>
-            <div className="main-content-item">
-              <div className="main-content-item-title">Collapsing Sidebar</div>
-              <br />
-              <div className="main-content-item-techstack">REACT</div>
-              <br />
-              <div className="main-content-item-feature">RECURSIVE</div>
-              <div className="main-content-item-descr">
-                This collapsing Sidebar populates a dynamic list recursively.
-              </div>
-            </div>
+            {frontEndCompsOpen && (
+              <>
+                <div className="main-content-item-br"></div>
+                <div className="main-content-item">
+                  <div className="main-content-item-title">Navbar</div>
+                  <br />
+                  <div className="main-content-item-techstack">REACT</div>
+                  <div className="main-content-item-techstack">SVG</div>
+                  <br />
+                  <div className="main-content-item-feature">RESPONSIVE</div>
+                  <div className="main-content-item-feature">SVG</div>
+                  <div className="main-content-item-descr">
+                    This NavBar has been crafted to attract and engages users
+                    with SVG animations.
+                  </div>
+                </div>
+                <div className="main-content-item-br"></div>
+                <div className="main-content-item">
+                  <div className="main-content-item-title">
+                    Collapsing Sidebar
+                  </div>
+                  <br />
+                  <div className="main-content-item-techstack">REACT</div>
+                  <br />
+                  <div className="main-content-item-feature">RECURSIVE</div>
+                  <div className="main-content-item-descr">
+                    This collapsing Sidebar populates a dynamic list
+                    recursively.
+                  </div>
+                </div>
+                <div className="main-content-item-br"></div>
+              </>
+            )}
           </div>
         </>
       )}
@@ -201,74 +244,102 @@ function App() {
             className="main-content"
             style={{
               width: pageWidth - 46,
+              fontWeight: webAppsOpen ? "bold" : undefined,
+              backgroundColor: webAppsOpen ? "rgb(219, 219, 206)" : "ivory",
             }}
           >
             <div className="main-content-title">Web Apps</div>
-            <div className="main-content-item">
-              <div className="main-content-item-title">Game-Stats</div>
-              <br />
-              <div className="main-content-item-techstack">REACT</div>
-              <div className="main-content-item-techstack">NODE</div>
-              <div className="main-content-item-techstack">EXPRESS</div>
-              <div className="main-content-item-techstack">POSTGRESQL</div>
-              <br />
-              <div className="main-content-item-feature">RESPONSIVE</div>
-              <div className="main-content-item-feature">SVG</div>
-              <div className="main-content-item-feature">DATA VIS</div>
-              <div className="main-content-item-feature">LOGIN SYSTEM</div>
-              <div className="main-content-item-feature">ADMIN CONTROLS</div>
-              <div className="main-content-item-descr">
-                This web-application visualizes numerous statistics of my board
-                game group.
-              </div>
-            </div>
-            <div className="main-content-item">
-              <div className="main-content-item-title">Mock Website</div>
-              <br />
-              <div className="main-content-item-techstack">REACT</div>
-              <div className="main-content-item-techstack">NODE</div>
-              <div className="main-content-item-techstack">EXPRESS</div>
-              <div className="main-content-item-techstack">POSTGRESQL</div>
-              <br />
-              <div className="main-content-item-feature">RESPONSIVE</div>
-              <div className="main-content-item-feature">LOGIN SYSTEM</div>
-              <div className="main-content-item-feature">DATA VIS</div>
-              <div className="main-content-item-feature">USER-SESSIONS</div>
-              <div className="main-content-item-descr">
-                This web-application features...
-              </div>
-            </div>
+            {webAppsOpen && (
+              <>
+                <div className="main-content-item">
+                  <div className="main-content-item-br"></div>
+                  <div className="main-content-item-title">Game-Stats</div>
+                  <br />
+                  <div className="main-content-item-techstack">REACT</div>
+                  <div className="main-content-item-techstack">NODE</div>
+                  <div className="main-content-item-techstack">EXPRESS</div>
+                  <div className="main-content-item-techstack">POSTGRESQL</div>
+                  <br />
+                  <div className="main-content-item-feature">RESPONSIVE</div>
+                  <div className="main-content-item-feature">SVG</div>
+                  <div className="main-content-item-feature">DATA VIS</div>
+                  <div className="main-content-item-feature">
+                    ADMIN CONTROLS
+                  </div>
+                  <div className="main-content-item-descr">
+                    This web-application uses SVG to visualize numerous
+                    statistics associated with my board game group. The data
+                    driving the statistics (stored in a PostgreSQL database)
+                    includes: meeting dates, players in attendance, choice of
+                    game, game winners, and descriptions.
+                  </div>
+                </div>
+                <div className="main-content-item-br"></div>
+                <div className="main-content-item">
+                  <div className="main-content-item-title">Mock Website</div>
+                  <br />
+                  <div className="main-content-item-techstack">REACT</div>
+                  <div className="main-content-item-techstack">NODE</div>
+                  <div className="main-content-item-techstack">EXPRESS</div>
+                  <div className="main-content-item-techstack">POSTGRESQL</div>
+                  <br />
+                  <div className="main-content-item-feature">RESPONSIVE</div>
+                  <div className="main-content-item-feature">LOGIN SYSTEM</div>
+                  <div className="main-content-item-feature">USER SESSIONS</div>
+                  <div className="main-content-item-feature">PROFILE</div>
+                  <div className="main-content-item-descr">
+                    This responsive web-application features a login system,
+                    user sessions, and profile page.
+                  </div>
+                </div>
+                <div className="main-content-item-br"></div>
+              </>
+            )}
           </div>
           <div
             className="main-content"
             style={{
               width: pageWidth - 46,
+              fontWeight: frontEndCompsOpen ? "bold" : undefined,
+              backgroundColor: frontEndCompsOpen
+                ? "rgb(219, 219, 206)"
+                : "ivory",
             }}
           >
-            <div className="main-content-title">Front End</div>
-            <div className="main-content-item">
-              <div className="main-content-item-title">Navbar</div>
-              <br />
-              <div className="main-content-item-techstack">REACT</div>
-              <div className="main-content-item-techstack">SVG</div>
-              <br />
-              <div className="main-content-item-feature">RESPONSIVE</div>
-              <div className="main-content-item-feature">ANIMATED</div>
-              <div className="main-content-item-descr">
-                This NavBar has been crafted to attract and engages users with
-                SVG animations.
-              </div>
-            </div>
-            <div className="main-content-item">
-              <div className="main-content-item-title">Collapsing Sidebar</div>
-              <br />
-              <div className="main-content-item-techstack">REACT</div>
-              <br />
-              <div className="main-content-item-feature">RECURSIVE</div>
-              <div className="main-content-item-descr">
-                This collapsing Sidebar populates a dynamic list recursively.
-              </div>
-            </div>
+            <div className="main-content-title">Front End Components</div>
+            {frontEndCompsOpen && (
+              <>
+                <div className="main-content-item-br"></div>
+                <div className="main-content-item">
+                  <div className="main-content-item-title">Navbar</div>
+                  <br />
+                  <div className="main-content-item-techstack">REACT</div>
+                  <div className="main-content-item-techstack">SVG</div>
+                  <br />
+                  <div className="main-content-item-feature">RESPONSIVE</div>
+                  <div className="main-content-item-feature">ANIMATED</div>
+                  <div className="main-content-item-descr">
+                    This NavBar has been crafted to attract and engages users
+                    with SVG animations.
+                  </div>
+                </div>
+                <div className="main-content-item-br"></div>
+                <div className="main-content-item">
+                  <div className="main-content-item-title">
+                    Collapsing Sidebar
+                  </div>
+                  <br />
+                  <div className="main-content-item-techstack">REACT</div>
+                  <br />
+                  <div className="main-content-item-feature">RECURSIVE</div>
+                  <div className="main-content-item-descr">
+                    This collapsing Sidebar populates a dynamic list
+                    recursively.
+                  </div>
+                </div>
+                <div className="main-content-item-br"></div>
+              </>
+            )}
           </div>
         </>
       )}

@@ -27,7 +27,7 @@ body {
   width: 100%;
   height: auto;
   text-align: center;
-  background-color: #4985ff;
+  background-color: orangered;
 }
 
 .portfolio-name {
@@ -45,22 +45,30 @@ body {
   text-decoration: underline;
 }
 
+.main-content-item-br {
+  display: block;
+  width: 100%;
+  height: 5px;
+  background-color: white;
+}
+
 .main-content {
   display: inline-block;
   background-color: ivory;
-  border: solid 3px black;
+  border: solid 3px darkgray;
   margin-top: 20px;
   margin-left: 20px;
   margin-right: 20px;
   font-size: 16px;
   font-family: "Open Sans", sans-serif;
   color: darkblue;
-  border-radius: 20px;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
 }
 
 .main-content-mobile {
   display: inline-block;
-  background-color: ivory;
+  background-color: rgb(255, 255, 240);
   border: solid 3px black;
   font-size: 16px;
   font-family: "Open Sans", sans-serif;
@@ -71,20 +79,17 @@ body {
 
 .main-content-title {
   display: block;
-  margin: 20px;
+  padding: 20px;
   font-family: "Open Sans", cursive;
   font-size: 40px;
   color: black;
   text-align: right;
+  user-select: none;
 }
 
 .main-content-item {
   background-color: #4985ff;
   display: block;
-  border-right: solid 2px white;
-  border-left: solid 2px white;
-  margin-top: 20px;
-  margin-bottom: 20px;
   padding-bottom: 5px;
   font-family: "Montserrat", cursive;
   font-size: 16px;
