@@ -260,11 +260,12 @@ function App() {
                   </a>
                   located in Missoula, Montana. It has numerous features
                   including a login system, password hashing, user sessions,
-                  administrative controls, an inventory management system, and
-                  an online store.
+                  administrative controls, an award history page, an inventory
+                  management system, and an online store.
                   <br />
                   <br />I do not own this project so I can not provide any links
-                  to any source code.
+                  to any source code and I can not provide credentials to allow
+                  you to access the site.
                 </div>
               </div>
               <div className="main-content-item-br"></div>
