@@ -78,12 +78,26 @@ body {
 }
 
 .main-content-item-github {
-  background-color: dodgerblue;
+  background-color: #7faaff;
   display: inline-block;
-  padding: 5px;
+  padding: 10px;
   font-weight: bold;
   font-size: 20px;
-  margin: 20px;
+  margin-left: 20px;
+}
+
+.main-content-item-tech-affiliate {
+  border-left: solid 5px white;
+  border-right: solid 5px white;
+  display: inline-block;
+  padding: 10px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  background-color: rgb(255, 196, 0);
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .main-content-item-tech-major {

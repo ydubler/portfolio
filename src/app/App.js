@@ -132,11 +132,13 @@ function App() {
           </div>
           {webAppsOpen && (
             <>
+              <div className="main-content-item-br"></div>
               <div className="main-content-item">
-                <div className="main-content-item-br"></div>
                 <div className="main-content-item-title">
                   Portfolio Website (This Website)
                 </div>
+                <br />
+                <div className="main-content-item-tech-affiliate">HOBBY</div>
                 <br />
                 <div className="main-content-item-tech-major">REACT</div>
                 <div className="main-content-item-tech-major">NODE</div>
@@ -164,12 +166,13 @@ function App() {
               </div>
               <div className="main-content-item-br"></div>
               <div className="main-content-item">
-                <div className="main-content-item-br"></div>
                 <div className="main-content-item-title">
                   <a target="_blank" href="https://yuri-dubler.herokuapp.com">
                     Resume Website (Abandoned)
                   </a>
                 </div>
+                <br />
+                <div className="main-content-item-tech-affiliate">HOBBY</div>
                 <br />
                 <div className="main-content-item-tech-major">REACT</div>
                 <div className="main-content-item-tech-major">NODE</div>
@@ -178,6 +181,11 @@ function App() {
                 <br />
                 <div className="main-content-item-tech-minor">WEBPACK</div>
                 <div className="main-content-item-tech-minor">BABEL</div>
+                <br />
+                <div className="main-content-item-feature">SVG ANIMATION</div>
+                <div className="main-content-item-feature">
+                  ALGORITHM VISUALIZATION
+                </div>
                 <br />
                 <div className="main-content-item-github">
                   <a
@@ -200,7 +208,21 @@ function App() {
               </div>
               <div className="main-content-item-br"></div>
               <div className="main-content-item">
-                <div className="main-content-item-title">ATG CultureCoin</div>
+                <div className="main-content-item-title">
+                  <a
+                    target="_blank"
+                    href="https://atgculturecoin.herokuapp.com"
+                  >
+                    ATG CultureCoin
+                  </a>
+                </div>
+                <br />
+                <div className="main-content-item-tech-affiliate">
+                  UNIVERSITY OF MONTANA
+                </div>
+                <div className="main-content-item-tech-affiliate">
+                  ADVANCED TECHNOLOGY GROUP
+                </div>
                 <br />
                 <div className="main-content-item-tech-major">REACT</div>
                 <div className="main-content-item-tech-major">NODE</div>
@@ -214,7 +236,7 @@ function App() {
                 <br />
                 <div className="main-content-item-feature">RESPONSIVE</div>
                 <div className="main-content-item-feature">
-                  HTTP REQUEST/RESPONSE
+                  HTTP REQUESTS/RESPONSES
                 </div>
                 <div className="main-content-item-feature">SQL QUERIES</div>
                 <div className="main-content-item-feature">
@@ -239,12 +261,14 @@ function App() {
                   system, and an online store.
                   <br />
                   <br />I do not own this project so I can not provide any links
-                  to it or source code.
+                  to any source code.
                 </div>
               </div>
               <div className="main-content-item-br"></div>
               <div className="main-content-item">
                 <div className="main-content-item-title">GameStats</div>
+                <br />
+                <div className="main-content-item-tech-affiliate">HOBBY</div>
                 <br />
                 <div className="main-content-item-tech-major">REACT</div>
                 <div className="main-content-item-tech-major">NODE</div>
@@ -308,7 +332,8 @@ function App() {
                     SVG Navbar
                   </a>
                 </div>
-
+                <br />
+                <div className="main-content-item-tech-affiliate">HOBBY</div>
                 <br />
                 <div className="main-content-item-tech-major">REACT</div>
                 <div className="main-content-item-tech-major">SVG</div>
@@ -335,6 +360,8 @@ function App() {
                     Collapsing Sidebar
                   </a>
                 </div>
+                <br />
+                <div className="main-content-item-tech-affiliate">HOBBY</div>
                 <br />
                 <div className="main-content-item-tech-major">REACT</div>
                 <br />
@@ -375,40 +402,37 @@ function App() {
               setDemonstrationsOpen(!demonstrationsOpen);
             }}
           >
-            Demonstrations (2)
+            Visualizations (1)
           </div>
           {demonstrationsOpen && (
             <>
               <div className="main-content-item-br"></div>
               <div className="main-content-item">
-                <div className="main-content-item-title">Filters</div>
-                <br />
-                <div className="main-content-item-tech-major">REACT</div>
-                <div className="main-content-item-tech-major">SVG</div>
-                <br />
-                <div className="main-content-item-feature">RESPONSIVE</div>
-                <div className="main-content-item-feature">IMAGE ANALYSIS</div>
-                <br />
-                <div className="main-content-item-descr">
-                  This mini-app allows the user to define a filter in order to
-                  analyze images for patterns.
+                <div className="main-content-item-title">
+                  <a href="https://yuri-dubler.herokuapp.com/articles/insertion-sort">
+                    Insertion Sort
+                  </a>
                 </div>
-              </div>
-              <div className="main-content-item-br"></div>
-              <div className="main-content-item">
-                <div className="main-content-item-title">Shortest Paths</div>
+                <br />
+                <div className="main-content-item-tech-affiliate">HOBBY</div>
                 <br />
                 <div className="main-content-item-tech-major">REACT</div>
                 <div className="main-content-item-tech-major">SVG</div>
                 <br />
-                <div className="main-content-item-feature">RESPONSIVE</div>
                 <div className="main-content-item-feature">
-                  GRAPH ALGORITHMS
+                  ALGORITHM VISUALIZATION
                 </div>
                 <br />
+                <div className="main-content-item-github">
+                  <a
+                    target="_blank"
+                    href="https://github.com/ydubler/resume-website/tree/master/src/components/articles/Articles/InsertionSort"
+                  >
+                    View On Github
+                  </a>
+                </div>
                 <div className="main-content-item-descr">
-                  This mini-app allows the user to define a graph and apply a
-                  pathing algorithm to said path.
+                  This is a visual demonstration of an insertion sort algorithm.
                 </div>
               </div>
               <div className="main-content-item-br"></div>
