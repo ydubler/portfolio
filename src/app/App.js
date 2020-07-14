@@ -133,7 +133,10 @@ function App() {
           {webAppsOpen && (
             <>
               <div className="main-content-item-br"></div>
-              <div className="main-content-item">
+              <div
+                className="main-content-item"
+                style={{ border: "solid lime 5px" }}
+              >
                 <div className="main-content-item-title">
                   Portfolio Website (This Website)
                 </div>
@@ -165,7 +168,10 @@ function App() {
                 </div>
               </div>
               <div className="main-content-item-br"></div>
-              <div className="main-content-item">
+              <div
+                className="main-content-item"
+                style={{ border: "solid lime 5px" }}
+              >
                 <div className="main-content-item-title">
                   <a target="_blank" href="https://yuri-dubler.herokuapp.com">
                     Resume Website (Abandoned)
@@ -181,8 +187,10 @@ function App() {
                 <br />
                 <div className="main-content-item-tech-minor">WEBPACK</div>
                 <div className="main-content-item-tech-minor">BABEL</div>
+                <div className="main-content-item-tech-minor">
+                  SVG ANIMATION
+                </div>
                 <br />
-                <div className="main-content-item-feature">SVG ANIMATION</div>
                 <div className="main-content-item-feature">
                   ALGORITHM VISUALIZATION
                 </div>
@@ -207,7 +215,10 @@ function App() {
                 </div>
               </div>
               <div className="main-content-item-br"></div>
-              <div className="main-content-item">
+              <div
+                className="main-content-item"
+                style={{ border: "solid lime 5px" }}
+              >
                 <div className="main-content-item-title">
                   <a
                     target="_blank"
@@ -269,7 +280,10 @@ function App() {
                 </div>
               </div>
               <div className="main-content-item-br"></div>
-              <div className="main-content-item">
+              <div
+                className="main-content-item"
+                style={{ border: "solid lime 5px" }}
+              >
                 <div className="main-content-item-title">
                   <a target="_blank" href="https://yd-game-stats.herokuapp.com">
                     Game Stats
@@ -312,7 +326,64 @@ function App() {
                   group.
                 </div>
               </div>
+
               <div className="main-content-item-br"></div>
+              <div
+                className="main-content-item"
+                style={{
+                  background: "linear-gradient(lightgray,darkgray)",
+                  border: "solid red 5px",
+                }}
+              >
+                <div className="main-content-item-title">Vue Application</div>
+                <br />
+                <div className="main-content-item-warning">
+                  FUTURE PROJECT (DOES NOT EXIST)
+                </div>
+                <br />
+                <div className="main-content-item-tech-affiliate">Hobby</div>
+                <br />
+                <div className="main-content-item-tech-major">VUE</div>
+                <div className="main-content-item-tech-major">NODE</div>
+                <div className="main-content-item-tech-major">EXPRESS</div>
+                <div className="main-content-item-tech-major">POSTGRESQL</div>
+                <br />
+                <div className="main-content-item-tech-minor">BABEL</div>
+                <div className="main-content-item-tech-minor">WEBPACK</div>
+                <br />
+                <div className="main-content-item-descr">
+                  This is a placeholder for an application that uses Vue.
+                </div>
+              </div>
+              <div className="main-content-item-br"></div>
+              <div
+                className="main-content-item"
+                style={{
+                  background: "linear-gradient(lightgray,darkgray)",
+                  border: "solid red 5px",
+                }}
+              >
+                <div className="main-content-item-title">
+                  Angular Application
+                </div>
+                <br />
+                <div className="main-content-item-warning">
+                  FUTURE PROJECT (DOES NOT EXIST)
+                </div>
+                <br />
+                <div className="main-content-item-tech-affiliate">Hobby</div>
+                <br />
+                <div className="main-content-item-tech-major">ANGULAR</div>
+                <div className="main-content-item-tech-major">NODE</div>
+                <div className="main-content-item-tech-major">EXPRESS</div>
+                <div className="main-content-item-tech-major">POSTGRESQL</div>
+                <br />
+                <div className="main-content-item-tech-minor">BABEL?</div>
+                <br />
+                <div className="main-content-item-descr">
+                  This is a placeholder for an application that uses Vue.
+                </div>
+              </div>
             </>
           )}
         </div>
