@@ -254,11 +254,14 @@ function App() {
                 <div className="main-content-item-feature">ONLINE STORE</div>
                 <br />
                 <div className="main-content-item-descr">
-                  My team and I produced this web application for Advanced
-                  Technology Group located in Missoula, Montana. It has numerous
-                  features including a login system, password hashing, user
-                  sessions, administrative controls, an inventory management
-                  system, and an online store.
+                  My team and I produced this web application for{" "}
+                  <a target="_blank" href="https://atginfo.com/">
+                    Advanced Technology Group
+                  </a>
+                  located in Missoula, Montana. It has numerous features
+                  including a login system, password hashing, user sessions,
+                  administrative controls, an inventory management system, and
+                  an online store.
                   <br />
                   <br />I do not own this project so I can not provide any links
                   to any source code.
@@ -451,133 +454,6 @@ function App() {
           )}
         </div>
       </>
-
-      {/* MOBILE BROWSER */}
-      {/* {browserMobile && (
-        <>
-          <div className="portfolio">
-            <div className="portfolio-name">Yuri Dubler /&nbsp;</div>
-            <div className="portfolio-text">Portfolio</div>
-          </div>
-          <div
-            className="main-content"
-            style={{
-              width: pageWidth - 46,
-              fontWeight: webAppsOpen ? "bold" : undefined,
-              backgroundColor: webAppsOpen ? "rgb(219, 219, 206)" : "ivory",
-              borderColor: webAppsOpen ? "black" : "darkgray",
-            }}
-          >
-            <div
-              className="main-content-title"
-              onClick={() => {
-                setWebAppsOpen(!webAppsOpen);
-              }}
-            >
-              Web Apps
-            </div>
-            {webAppsOpen && (
-              <>
-                <div className="main-content-item">
-                  <div className="main-content-item-br"></div>
-                  <div className="main-content-item-title">Game-Stats</div>
-                  <br />
-                  <div className="main-content-item-tech-major">REACT</div>
-                  <div className="main-content-item-tech-major">NODE</div>
-                  <div className="main-content-item-tech-major">EXPRESS</div>
-                  <div className="main-content-item-tech-major">POSTGRESQL</div>
-                  <br />
-                  <div className="main-content-item-feature">RESPONSIVE</div>
-                  <div className="main-content-item-feature">SVG</div>
-                  <div className="main-content-item-feature">DATA VIS</div>
-                  <div className="main-content-item-feature">
-                    ADMIN CONTROLS
-                  </div>
-                  <div className="main-content-item-descr">
-                    This web-application uses SVG to visualize numerous
-                    statistics associated with my board game group. The data
-                    driving the statistics (stored in a PostgreSQL database)
-                    includes: meeting dates, players in attendance, choice of
-                    game, game winners, and descriptions.
-                  </div>
-                </div>
-                <div className="main-content-item-br"></div>
-                <div className="main-content-item">
-                  <div className="main-content-item-title">Mock Website</div>
-                  <br />
-                  <div className="main-content-item-tech-major">REACT</div>
-                  <div className="main-content-item-tech-major">NODE</div>
-                  <div className="main-content-item-tech-major">EXPRESS</div>
-                  <div className="main-content-item-tech-major">POSTGRESQL</div>
-                  <br />
-                  <div className="main-content-item-feature">RESPONSIVE</div>
-                  <div className="main-content-item-feature">LOGIN SYSTEM</div>
-                  <div className="main-content-item-feature">USER SESSIONS</div>
-                  <div className="main-content-item-feature">PROFILE</div>
-                  <div className="main-content-item-descr">
-                    This responsive web-application features a login system,
-                    user sessions, and profile page.
-                  </div>
-                </div>
-                <div className="main-content-item-br"></div>
-              </>
-            )}
-          </div>
-          <div
-            className="main-content"
-            style={{
-              width: pageWidth - 46,
-              fontWeight: frontEndCompsOpen ? "bold" : undefined,
-              backgroundColor: frontEndCompsOpen
-                ? "rgb(219, 219, 206)"
-                : "ivory",
-              borderColor: frontEndCompsOpen ? "black" : "darkgray",
-            }}
-          >
-            <div
-              className="main-content-title"
-              onClick={() => {
-                setFrontEndCompsOpen(!frontEndCompsOpen);
-              }}
-            >
-              Front End Components
-            </div>
-            {frontEndCompsOpen && (
-              <>
-                <div className="main-content-item-br"></div>
-                <div className="main-content-item">
-                  <div className="main-content-item-title">Navbar</div>
-                  <br />
-                  <div className="main-content-item-tech-major">REACT</div>
-                  <div className="main-content-item-tech-major">SVG</div>
-                  <br />
-                  <div className="main-content-item-feature">RESPONSIVE</div>
-                  <div className="main-content-item-feature">ANIMATED</div>
-                  <div className="main-content-item-descr">
-                    This NavBar has been crafted to attract and engage users
-                    with smooth and polished SVG animations.
-                  </div>
-                </div>
-                <div className="main-content-item-br"></div>
-                <div className="main-content-item">
-                  <div className="main-content-item-title">
-                    Collapsing Sidebar
-                  </div>
-                  <br />
-                  <div className="main-content-item-tech-major">REACT</div>
-                  <br />
-                  <div className="main-content-item-feature">RECURSIVE</div>
-                  <div className="main-content-item-descr">
-                    This collapsing Sidebar populates a dynamic list
-                    recursively.
-                  </div>
-                </div>
-                <div className="main-content-item-br"></div>
-              </>
-            )}
-          </div>
-        </>
-      )} */}
 
       {/* <img src="/public/images/coffee1.jpg"></img> */}
     </>
