@@ -257,7 +257,7 @@ function App() {
                   My team and I produced this web application for{" "}
                   <a target="_blank" href="https://atginfo.com/">
                     Advanced Technology Group
-                  </a>
+                  </a>{" "}
                   located in Missoula, Montana. It has numerous features
                   including a login system, password hashing, user sessions,
                   administrative controls, an award history page, an inventory
