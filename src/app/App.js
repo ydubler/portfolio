@@ -128,7 +128,7 @@ function App() {
               setWebAppsOpen(!webAppsOpen);
             }}
           >
-            Web Apps (2)
+            Web Apps (4)
           </div>
           {webAppsOpen && (
             <>
@@ -160,6 +160,42 @@ function App() {
                   Welcome to my Portfolio website! This website features
                   numerous projects which have helped me gain experience in
                   web-development and producing software.
+                </div>
+              </div>
+              <div className="main-content-item-br"></div>
+              <div className="main-content-item">
+                <div className="main-content-item-br"></div>
+                <div className="main-content-item-title">
+                  <a target="_blank" href="https://yuri-dubler.herokuapp.com">
+                    Resume Website (Abandoned)
+                  </a>
+                </div>
+                <br />
+                <div className="main-content-item-tech-major">REACT</div>
+                <div className="main-content-item-tech-major">NODE</div>
+                <div className="main-content-item-tech-major">EXPRESS</div>
+                <div className="main-content-item-cloud">HEROKU</div>
+                <br />
+                <div className="main-content-item-tech-minor">WEBPACK</div>
+                <div className="main-content-item-tech-minor">BABEL</div>
+                <br />
+                <div className="main-content-item-github">
+                  <a
+                    target="_blank"
+                    href="https://github.com/ydubler/resume-website"
+                  >
+                    View On Github
+                  </a>
+                </div>
+                <div className="main-content-item-descr">
+                  This was an earlier attempt at a resume/portfolio website
+                  before I decided to create a new portfolio website. It inclues
+                  a fancy SVG animation of my name, an implementation of a
+                  Navbar and a&nbsp;
+                  <a href="https://yuri-dubler.herokuapp.com/articles/insertion-sort">
+                    visual demo of insertion sort
+                  </a>{" "}
+                  using animated SVG. It will likely remain abandoned.
                 </div>
               </div>
               <div className="main-content-item-br"></div>
@@ -239,7 +275,7 @@ function App() {
                   that data to display numerous graphs about the game.
                   <br />
                   <br />
-                  This project is not yet deployed to a server.
+                  This project is not deployed to a server.
                 </div>
               </div>
               <div className="main-content-item-br"></div>
