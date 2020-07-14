@@ -270,14 +270,9 @@ function App() {
               <div className="main-content-item-br"></div>
               <div className="main-content-item">
                 <div className="main-content-item-title">
-                  <div className="main-content-item-title">
-                    <a
-                      target="_blank"
-                      href="https://yd-game-stats.herokuapp.com"
-                    >
-                      Game Stats
-                    </a>
-                  </div>
+                  <a target="_blank" href="https://yd-game-stats.herokuapp.com">
+                    Game Stats
+                  </a>
                 </div>
                 <br />
                 <div className="main-content-item-tech-affiliate">HOBBY</div>
