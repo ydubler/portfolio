@@ -142,21 +142,21 @@ server.get("/front-end-components/navbar", (req, res) => {
 
   res.send(`
   <html>
-  <head>
-  <title>Yuri Dubler's Portfolio</title>
-  <meta name="charset" content="utf-8" />
-  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, minimum-scale=1, maximum-scale=1.1">
-  <meta name="author" content="Yuri Dubler" />
-  <meta name="description" content="Yuri Dubler's Portfolio" />
-  <style data-aphrodite>${CSS}</style>
-  <link href="https://fonts.googleapis.com/css2?family=Fascinate+Inline&family=Lobster+Two&family=Open+Sans&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Fondamento&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Galada&family=Montserrat&display=swap" rel="stylesheet">
-  </head>
-  <body style="margin:0px;font-family:Helvetica Neue" id="body">
-  <div id="mountnode">${HTML}</div>
-  <script src="../dist/main.js"></script>
-  </body>
+    <head>
+      <title>Yuri Dubler's Portfolio</title>
+      <meta name="charset" content="utf-8" />
+      <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, minimum-scale=1, maximum-scale=1.1">
+      <meta name="author" content="Yuri Dubler" />
+      <meta name="description" content="Yuri Dubler's Portfolio" />
+      <style data-aphrodite>${CSS}</style>
+      <link href="https://fonts.googleapis.com/css2?family=Fascinate+Inline&family=Lobster+Two&family=Open+Sans&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Fondamento&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Galada&family=Montserrat&display=swap" rel="stylesheet">
+    </head>
+    <body style="margin:0px;font-family:Helvetica Neue" id="body">
+      <div id="mountnode">${HTML}</div>
+      <script src="../dist/main.js"></script>
+    </body>
   </html>
   `);
 });

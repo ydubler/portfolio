@@ -266,7 +266,16 @@ function App() {
               </div>
               <div className="main-content-item-br"></div>
               <div className="main-content-item">
-                <div className="main-content-item-title">GameStats</div>
+                <div className="main-content-item-title">
+                  <div className="main-content-item-title">
+                    <a
+                      target="_blank"
+                      href="https://yd-game-stats.herokuapp.com"
+                    >
+                      Game Stats
+                    </a>
+                  </div>
+                </div>
                 <br />
                 <div className="main-content-item-tech-affiliate">HOBBY</div>
                 <br />
@@ -279,6 +288,9 @@ function App() {
                 <div className="main-content-item-tech-minor">WEBPACK</div>
                 <div className="main-content-item-tech-minor">SVG</div>
                 <br />
+                <div className="main-content-item-feature">
+                  HTTP REQUESTS/RESPONSES
+                </div>
                 <div className="main-content-item-feature">SQL QUERIES</div>
                 <div className="main-content-item-feature">
                   DATA VISUALIZATION
@@ -293,13 +305,12 @@ function App() {
                   </a>
                 </div>
                 <div className="main-content-item-descr">
-                  This web-application was inspired by my board game groups
-                  fascination with the Game of Thrones board game. It allows the
-                  user to save a game session into the database and then loads
-                  that data to display numerous graphs about the game.
-                  <br />
-                  <br />
-                  This project is not deployed to a server.
+                  Game of Thrones: The Board Game is compelling and inspired
+                  this web-application which allows the user to save a game
+                  session into the database and then loads that data to display
+                  numerous graphs about the game. It serves to preserve the
+                  history of a game that has been central to our board game
+                  group.
                 </div>
               </div>
               <div className="main-content-item-br"></div>
