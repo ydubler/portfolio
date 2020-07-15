@@ -103,7 +103,7 @@ function App() {
   return (
     <>
       <div id="page-width" className="one-hundred">
-        {isBrowser ? "Desktop Browser" : "Mobile Browser"}
+        {/* {isBrowser ? "Desktop Browser" : "Mobile Browser"} */}
       </div>
       <>
         <div
@@ -132,7 +132,6 @@ function App() {
           </div>
           {webAppsOpen && (
             <>
-              <div className="main-content-item-br"></div>
               <div
                 className="main-content-item"
                 style={{ border: "solid lime 5px" }}
@@ -158,7 +157,7 @@ function App() {
                     target="_blank"
                     href="https://github.com/ydubler/portfolio/"
                   >
-                    View On Github
+                    VIEW ON GITHUB
                   </a>
                 </div>
                 <div className="main-content-item-descr">
@@ -167,7 +166,7 @@ function App() {
                   web-development and producing software.
                 </div>
               </div>
-              <div className="main-content-item-br"></div>
+
               <div
                 className="main-content-item"
                 style={{ border: "solid lime 5px" }}
@@ -218,7 +217,7 @@ function App() {
                   using animated SVG.
                 </div>
               </div>
-              <div className="main-content-item-br"></div>
+
               <div
                 className="main-content-item"
                 style={{ border: "solid lime 5px" }}
@@ -283,7 +282,7 @@ function App() {
                   you to access the site.
                 </div>
               </div>
-              <div className="main-content-item-br"></div>
+
               <div
                 className="main-content-item"
                 style={{ border: "solid lime 5px" }}
@@ -331,7 +330,6 @@ function App() {
                 </div>
               </div>
 
-              <div className="main-content-item-br"></div>
               <div
                 className="main-content-item"
                 style={{
@@ -345,7 +343,7 @@ function App() {
                   FUTURE PROJECT (DOES NOT EXIST)
                 </div>
               </div>
-              <div className="main-content-item-br"></div>
+
               <div
                 className="main-content-item"
                 style={{
@@ -369,7 +367,7 @@ function App() {
           style={{
             width: browserMobile ? pageWidth - 46 : contentWidth,
             minWidth: browserMobile ? "0px" : "400px",
-            backgroundColor: frontEndCompsOpen ? "rgb(219, 219, 206)" : "ivory",
+            //backgroundColor: frontEndCompsOpen ? "rgb(219, 219, 206)" : "ivory",
             borderColor: frontEndCompsOpen ? "black" : "darkgray",
           }}
         >
@@ -383,7 +381,6 @@ function App() {
           </div>
           {frontEndCompsOpen && (
             <>
-              <div className="main-content-item-br"></div>
               <div className="main-content-item">
                 <div className="main-content-item-title">
                   <a target="_blank" href="/front-end-components/navbar">
@@ -411,7 +408,7 @@ function App() {
                   users with smooth SVG animations.
                 </div>
               </div>
-              <div className="main-content-item-br"></div>
+
               <div className="main-content-item">
                 <div className="main-content-item-title">
                   <a target="_blank" href="/front-end-components/sidebar">
@@ -438,7 +435,6 @@ function App() {
                   recursively.
                 </div>
               </div>
-              <div className="main-content-item-br"></div>
             </>
           )}
         </div>
@@ -448,9 +444,9 @@ function App() {
           style={{
             width: browserMobile ? pageWidth - 46 : contentWidth,
             minWidth: browserMobile ? "0px" : "400px",
-            backgroundColor: demonstrationsOpen
-              ? "rgb(219, 219, 206)"
-              : "ivory",
+            // backgroundColor: demonstrationsOpen
+            //   ? "rgb(219, 219, 206)"
+            //   : "ivory",
             borderColor: demonstrationsOpen ? "black" : "darkgray",
           }}
         >
@@ -464,7 +460,6 @@ function App() {
           </div>
           {demonstrationsOpen && (
             <>
-              <div className="main-content-item-br"></div>
               <div className="main-content-item">
                 <div className="main-content-item-title">
                   <a
@@ -494,7 +489,6 @@ function App() {
                   This is a visual demonstration of an insertion sort algorithm.
                 </div>
               </div>
-              <div className="main-content-item-br"></div>
             </>
           )}
         </div>
