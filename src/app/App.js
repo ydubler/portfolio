@@ -174,7 +174,7 @@ function App() {
               >
                 <div className="main-content-item-title">
                   <a target="_blank" href="https://yuri-dubler.herokuapp.com">
-                    Resume Website (Abandoned)
+                    Resume Website
                   </a>
                 </div>
                 <br />
@@ -187,6 +187,7 @@ function App() {
                 <br />
                 <div className="main-content-item-tech-minor">WEBPACK</div>
                 <div className="main-content-item-tech-minor">BABEL</div>
+                <div className="main-content-item-tech-minor">APHRODITE</div>
                 <div className="main-content-item-tech-minor">
                   SVG ANIMATION
                 </div>
@@ -205,13 +206,16 @@ function App() {
                 </div>
                 <div className="main-content-item-descr">
                   This was an earlier attempt at a resume/portfolio website
-                  before I decided to create a new portfolio website. It inclues
-                  a fancy SVG animation of my name, an implementation of a
-                  Navbar and a&nbsp;
-                  <a href="https://yuri-dubler.herokuapp.com/articles/insertion-sort">
+                  before I decided to create a new portfolio website. It
+                  includes a fancy SVG animation of my name, an implementation
+                  of a Navbar and a&nbsp;
+                  <a
+                    target="_blank"
+                    href="https://yuri-dubler.herokuapp.com/articles/insertion-sort"
+                  >
                     visual demo of insertion sort
                   </a>{" "}
-                  using animated SVG. It will likely remain abandoned.
+                  using animated SVG.
                 </div>
               </div>
               <div className="main-content-item-br"></div>
@@ -340,20 +344,6 @@ function App() {
                 <div className="main-content-item-warning">
                   FUTURE PROJECT (DOES NOT EXIST)
                 </div>
-                <br />
-                <div className="main-content-item-tech-affiliate">Hobby</div>
-                <br />
-                <div className="main-content-item-tech-major">VUE</div>
-                <div className="main-content-item-tech-major">NODE</div>
-                <div className="main-content-item-tech-major">EXPRESS</div>
-                <div className="main-content-item-tech-major">POSTGRESQL</div>
-                <br />
-                <div className="main-content-item-tech-minor">BABEL</div>
-                <div className="main-content-item-tech-minor">WEBPACK</div>
-                <br />
-                <div className="main-content-item-descr">
-                  This is a placeholder for an application that uses Vue.
-                </div>
               </div>
               <div className="main-content-item-br"></div>
               <div
@@ -369,19 +359,6 @@ function App() {
                 <br />
                 <div className="main-content-item-warning">
                   FUTURE PROJECT (DOES NOT EXIST)
-                </div>
-                <br />
-                <div className="main-content-item-tech-affiliate">Hobby</div>
-                <br />
-                <div className="main-content-item-tech-major">ANGULAR</div>
-                <div className="main-content-item-tech-major">NODE</div>
-                <div className="main-content-item-tech-major">EXPRESS</div>
-                <div className="main-content-item-tech-major">POSTGRESQL</div>
-                <br />
-                <div className="main-content-item-tech-minor">BABEL?</div>
-                <br />
-                <div className="main-content-item-descr">
-                  This is a placeholder for an application that uses Vue.
                 </div>
               </div>
             </>
@@ -483,14 +460,17 @@ function App() {
               setDemonstrationsOpen(!demonstrationsOpen);
             }}
           >
-            Visualizations (1)
+            Algorithm Visualizations (1)
           </div>
           {demonstrationsOpen && (
             <>
               <div className="main-content-item-br"></div>
               <div className="main-content-item">
                 <div className="main-content-item-title">
-                  <a href="https://yuri-dubler.herokuapp.com/articles/insertion-sort">
+                  <a
+                    target="_blank"
+                    href="https://yuri-dubler.herokuapp.com/articles/insertion-sort"
+                  >
                     Insertion Sort
                   </a>
                 </div>
@@ -500,9 +480,7 @@ function App() {
                 <div className="main-content-item-tech-major">REACT</div>
                 <div className="main-content-item-tech-major">SVG</div>
                 <br />
-                <div className="main-content-item-feature">
-                  ALGORITHM VISUALIZATION
-                </div>
+                <div className="main-content-item-feature">SVG ANIMATION</div>
                 <br />
                 <div className="main-content-item-github">
                   <a
