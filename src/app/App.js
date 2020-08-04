@@ -299,6 +299,7 @@ function App() {
                 <div className="main-content-item-tech-major">NODE</div>
                 <div className="main-content-item-tech-major">EXPRESS</div>
                 <div className="main-content-item-tech-major">POSTGRESQL</div>
+                <div className="main-content-item-cloud">HEROKU</div>
                 <br />
                 <div className="main-content-item-tech-minor">BABEL</div>
                 <div className="main-content-item-tech-minor">WEBPACK</div>
@@ -327,6 +328,46 @@ function App() {
                   numerous graphs about the game. It serves to preserve the
                   history of a game that has been central to our board game
                   group.
+                </div>
+              </div>
+
+              <div
+                className="main-content-item"
+                style={{ border: "solid lime 5px" }}
+              >
+                <div className="main-content-item-title">
+                  <a target="_blank" href="https://yd-game-stats.herokuapp.com">
+                    ArcGIS API
+                  </a>
+                </div>
+                <br />
+                <div className="main-content-item-tech-affiliate">HOBBY</div>
+                <br />
+                <div className="main-content-item-tech-major">REACT</div>
+                <div className="main-content-item-tech-major">NODE</div>
+                <div className="main-content-item-tech-major">EXPRESS</div>
+                <div className="main-content-item-tech-major">ARCGIS</div>
+                <div className="main-content-item-cloud">HEROKU</div>
+                <br />
+                <div className="main-content-item-tech-minor">BABEL</div>
+                <div className="main-content-item-tech-minor">WEBPACK</div>
+                <br />
+                <div className="main-content-item-feature">MAPPING</div>
+                <br />
+                <div className="main-content-item-github">
+                  <a
+                    target="_blank"
+                    href="https://github.com/ydubler/game-stats"
+                  >
+                    View On Github
+                  </a>
+                </div>
+                <div className="main-content-item-descr">
+                  This web application features my evolving knowledge of the
+                  <a href="https://developers.arcgis.com/javascript/">
+                    ArcGIS API for Javascript
+                  </a>
+                  .
                 </div>
               </div>
 
