@@ -336,7 +336,7 @@ function App() {
                 style={{ border: "solid lime 5px" }}
               >
                 <div className="main-content-item-title">
-                  <a target="_blank" href="https://yd-game-stats.herokuapp.com">
+                  <a target="_blank" href="https://yd-arcgis.herokuapp.com/">
                     ArcGIS API
                   </a>
                 </div>
@@ -360,7 +360,8 @@ function App() {
                   </a>
                 </div>
                 <div className="main-content-item-descr">
-                  This web application features my evolving knowledge of the
+                  This web application features my evolving knowledge of
+                  the&nbsp;
                   <a href="https://developers.arcgis.com/javascript/">
                     ArcGIS API for Javascript
                   </a>
@@ -394,7 +395,7 @@ function App() {
                   </a>
                 </div>
                 <div className="main-content-item-descr">
-                  This is my first application leveraging
+                  This is my first application leveraging&nbsp;
                   <a href="https://vuejs.org/">Vue.js</a>.
                 </div>
               </div>
