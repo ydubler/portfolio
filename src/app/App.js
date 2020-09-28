@@ -187,13 +187,11 @@ function App() {
                 <div className="main-content-item-tech-minor">WEBPACK</div>
                 <div className="main-content-item-tech-minor">BABEL</div>
                 <div className="main-content-item-tech-minor">APHRODITE</div>
-                <div className="main-content-item-tech-minor">
-                  SVG ANIMATION
-                </div>
                 <br />
                 <div className="main-content-item-feature">
                   ALGORITHM VISUALIZATION
                 </div>
+                <div className="main-content-item-feature">SVG ANIMATION</div>
                 <br />
                 <div className="main-content-item-github">
                   <a
@@ -349,11 +347,13 @@ function App() {
                 <div className="main-content-item-tech-major">REACT</div>
                 <div className="main-content-item-tech-major">NODE</div>
                 <div className="main-content-item-tech-major">EXPRESS</div>
+                <div className="main-content-item-tech-major">
+                  ARCGIS JAVASCRIPT API
+                </div>
                 <div className="main-content-item-cloud">HEROKU</div>
                 <br />
                 <div className="main-content-item-tech-minor">BABEL</div>
                 <div className="main-content-item-tech-minor">WEBPACK</div>
-                <div className="main-content-item-tech-major">ARCGIS</div>
                 <br />
                 <div className="main-content-item-feature">MAPPING</div>
                 <br />
