@@ -402,6 +402,47 @@ function App() {
 
               <div
                 className="main-content-item"
+                style={{ border: "solid lime 5px" }}
+              >
+                <div className="main-content-item-title">
+                  <a
+                    target="_blank"
+                    href="https://yd-docker-basic.herokuapp.com"
+                  >
+                    Docker Container Application (Basic)
+                  </a>
+                </div>
+                <br />
+                <div className="main-content-item-tech-affiliate">HOBBY</div>
+                <br />
+                <div className="main-content-item-tech-major">VUE</div>
+                <div className="main-content-item-tech-major">NODE</div>
+                <div className="main-content-item-tech-major">EXPRESS</div>
+                <div className="main-content-item-tech-major">DOCKER</div>
+                <div className="main-content-item-cloud">HEROKU</div>
+                <br />
+                <div className="main-content-item-github">
+                  <a
+                    target="_blank"
+                    href="https://github.com/ydubler/docker-basic"
+                  >
+                    View On Github
+                  </a>
+                </div>
+                <div className="main-content-item-descr">
+                  This is my first deployed application leveraging&nbsp;
+                  <a href="https://www.docker.com/">Docker.js</a>. This project
+                  contains a Dockerfile which is built into a Docker Image
+                  containing the source-code for the simple web application. On
+                  the localhost, We would create and start a container based on
+                  the Image which would then be viewable on port 3000. Deploying
+                  the Docker-based project to Heroku, however, just required the
+                  Image to be uploaded to the Heroku Image Repository.
+                </div>
+              </div>
+
+              <div
+                className="main-content-item"
                 style={{
                   background: "linear-gradient(lightgray,darkgray)",
                   border: "solid red 5px",
