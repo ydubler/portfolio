@@ -147,8 +147,8 @@ function App() {
                 <div className="main-content-item-tech-major">EXPRESS</div>
                 <div className="main-content-item-cloud">HEROKU</div>
                 <br />
-                <div className="main-content-item-tech-minor">WEBPACK</div>
                 <div className="main-content-item-tech-minor">BABEL</div>
+                <div className="main-content-item-tech-minor">WEBPACK</div>
                 <br />
                 <div className="main-content-item-feature">RESPONSIVE</div>
                 <br />
@@ -182,11 +182,12 @@ function App() {
                 <div className="main-content-item-tech-major">REACT</div>
                 <div className="main-content-item-tech-major">NODE</div>
                 <div className="main-content-item-tech-major">EXPRESS</div>
-                <div className="main-content-item-cloud">HEROKU</div>
-                <br />
-                <div className="main-content-item-tech-minor">WEBPACK</div>
+                <div className="main-content-item-cloud">HEROKU</div> <br />
                 <div className="main-content-item-tech-minor">BABEL</div>
-                <div className="main-content-item-tech-minor">APHRODITE</div>
+                <div className="main-content-item-tech-minor">WEBPACK</div>
+                <div className="main-content-item-tech-minor">
+                  APHRODITE CSS-IN-JS
+                </div>
                 <br />
                 <div className="main-content-item-feature">
                   ALGORITHM VISUALIZATION
@@ -391,6 +392,9 @@ function App() {
                 <div className="main-content-item-tech-major">EXPRESS</div>
                 <div className="main-content-item-cloud">HEROKU</div>
                 <br />
+                <div className="main-content-item-tech-minor">BABEL</div>
+                <div className="main-content-item-tech-minor">WEBPACK</div>
+                <br />
                 <div className="main-content-item-github">
                   <a
                     target="_blank"
@@ -425,6 +429,9 @@ function App() {
                 <div className="main-content-item-tech-major">EXPRESS</div>
                 <div className="main-content-item-container">DOCKER</div>
                 <div className="main-content-item-cloud">HEROKU</div>
+                <br />
+                <div className="main-content-item-tech-minor">BABEL</div>
+                <div className="main-content-item-tech-minor">WEBPACK</div>
                 <br />
                 <div className="main-content-item-github">
                   <a
