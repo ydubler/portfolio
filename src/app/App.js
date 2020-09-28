@@ -498,9 +498,9 @@ function App() {
                 <div className="main-content-item-tech-affiliate">HOBBY</div>
                 <br />
                 <div className="main-content-item-tech-major">REACT</div>
-                <div className="main-content-item-tech-major">SVG</div>
                 <br />
                 <div className="main-content-item-feature">RESPONSIVE</div>
+                <div className="main-content-item-feature">SVG</div>
                 <br />
                 <div className="main-content-item-github">
                   <a
