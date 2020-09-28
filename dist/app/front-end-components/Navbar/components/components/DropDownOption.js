@@ -1,0 +1,30 @@
+"use strict";Object.defineProperty(exports,"__esModule",{value:true});exports["default"]=void 0;var _react=_interopRequireDefault(require("react"));var _aphrodite=require("aphrodite");var _reactDeviceDetect=require("react-device-detect");function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{"default":obj};}function _typeof(obj){"@babel/helpers - typeof";if(typeof Symbol==="function"&&typeof Symbol.iterator==="symbol"){_typeof=function _typeof(obj){return typeof obj;};}else{_typeof=function _typeof(obj){return obj&&typeof Symbol==="function"&&obj.constructor===Symbol&&obj!==Symbol.prototype?"symbol":typeof obj;};}return _typeof(obj);}function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}function _createClass(Constructor,protoProps,staticProps){if(protoProps)_defineProperties(Constructor.prototype,protoProps);if(staticProps)_defineProperties(Constructor,staticProps);return Constructor;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function");}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,writable:true,configurable:true}});if(superClass)_setPrototypeOf(subClass,superClass);}function _setPrototypeOf(o,p){_setPrototypeOf=Object.setPrototypeOf||function _setPrototypeOf(o,p){o.__proto__=p;return o;};return _setPrototypeOf(o,p);}function _createSuper(Derived){return function(){var Super=_getPrototypeOf(Derived),result;if(_isNativeReflectConstruct()){var NewTarget=_getPrototypeOf(this).constructor;result=Reflect.construct(Super,arguments,NewTarget);}else{result=Super.apply(this,arguments);}return _possibleConstructorReturn(this,result);};}function _possibleConstructorReturn(self,call){if(call&&(_typeof(call)==="object"||typeof call==="function")){return call;}return _assertThisInitialized(self);}function _assertThisInitialized(self){if(self===void 0){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return self;}function _isNativeReflectConstruct(){if(typeof Reflect==="undefined"||!Reflect.construct)return false;if(Reflect.construct.sham)return false;if(typeof Proxy==="function")return true;try{Date.prototype.toString.call(Reflect.construct(Date,[],function(){}));return true;}catch(e){return false;}}function _getPrototypeOf(o){_getPrototypeOf=Object.setPrototypeOf?Object.getPrototypeOf:function _getPrototypeOf(o){return o.__proto__||Object.getPrototypeOf(o);};return _getPrototypeOf(o);}// App Function Component
+var DropDownOption=/*#__PURE__*/function(_React$Component){_inherits(DropDownOption,_React$Component);var _super=_createSuper(DropDownOption);// GENERAL NOTES
+// DROP DOWN OPTION DOES NOT WORK YET -- SOMETHING ABOUT THE Y COMPONENT OF THE RECT & TEXT
+function DropDownOption(props){var _this;_classCallCheck(this,DropDownOption);_this=_super.call(this,props);// STATE NOTES
+_this.state={mouseEnteredDropdownOption:false,mouseTriggeredAnimation:false,fillColor:_this.props.optionFillColor};// // Aphrodite Stylesheet
+// this.styles = StyleSheet.create({});
+// Aphrodite Stylesheet
+//this.animations = StyleSheet.create({});
+return _this;}_createClass(DropDownOption,[{key:"componentDidUpdate",value:function componentDidUpdate(){}},{key:"componentDidMount",value:function componentDidMount(){}},{key:"componentWillReceiveProps",value:function componentWillReceiveProps(){}// APPROACH
+// Render the option SVG display component
+},{key:"render",value:function render(){var _this2=this;return/*#__PURE__*/_react["default"].createElement(_react["default"].Fragment,null,/*#__PURE__*/_react["default"].createElement("rect",{x:"0",y:this.props.optionVerticalOffsetIdeal+this.props.optionHeightIdeal+this.props.dropdownBarHeight+this.props.index*this.props.longestStringHeight,fill:this.state.fillColor// opacity={
+//   1.0 -
+//   this.props.index / (this.props.optionsListItem.subtitles.length * 2)
+// }
+,height:this.props.longestStringHeight,width:"100%",onMouseEnter:function onMouseEnter(){_this2.setState({mouseEnteredDropdownOption:true,fillColor:"white"});},onMouseLeave:function onMouseLeave(){_this2.setState({mouseEnteredDropdownOption:false,fillColor:_this2.props.optionFillColor});},pointerEvents:"fill",onClick:function onClick(){// if (
+//   this.props.optionsListItem.titleURL +
+//     this.props.optionsListItem.subtitleURLS[this.props.index] ===
+//   "/resume/download"
+// ) {
+//   window.location =
+//     this.props.optionsListItem.titleURL +
+//     this.props.optionsListItem.subtitleURLS[this.props.index];
+// } else {
+//   // this.props.history.push(
+//   //   this.props.optionsListItem.titleURL +
+//   //     this.props.optionsListItem.subtitleURLS[this.props.index]
+//   // );
+// }
+}}),/*#__PURE__*/_react["default"].createElement("text",{key:Math.random(),x:this.props.c_optionWidthBufferConstant/2,y:this.props.optionVerticalOffsetIdeal+this.props.optionHeightIdeal+this.props.dropdownBarHeight+this.props.index*this.props.longestStringHeight,fontSize:"25",fontFamily:"Optima",fontWeight:this.state.mouseEnteredDropdownOption?"bold":"regular",dominantBaseline:"text-before-edge",pointerEvents:"none",fill:this.state.mouseEnteredDropdownOption?"black":"white"},this.props.optionsListItem.subtitles[this.props.index]));}}]);return DropDownOption;}(_react["default"].Component);// Font: Proxima Nova
+var ProximaNovaFont={fontFamily:"Proxima Nova",fontStyle:"normal",fontWeight:"normal",src:"local('ProximaNova'), local('ProximaNova-Regular'), url('src/fonts/ProximaNova/Proxima-Nova-Regular.woff2') format('woff2')"};var _default=DropDownOption;exports["default"]=_default;

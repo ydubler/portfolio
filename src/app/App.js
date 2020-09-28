@@ -128,7 +128,7 @@ function App() {
               setWebAppsOpen(!webAppsOpen);
             }}
           >
-            Web Apps (6)
+            Web Apps (7)
           </div>
           {webAppsOpen && (
             <>
@@ -277,9 +277,12 @@ function App() {
                   administrative controls, an award history page, an inventory
                   management system, and an online store.
                   <br />
-                  <br />I do not own this project so I can not provide any links
-                  to any source code and I can not provide credentials to allow
-                  you to access the site.
+                  <br />
+                  <u>
+                    I do not own this project so I can not provide any links to
+                    any source code and I can not provide credentials to allow
+                    you to access the site.
+                  </u>
                 </div>
               </div>
 
@@ -381,7 +384,9 @@ function App() {
                 <br />
                 <div className="main-content-item-tech-affiliate">HOBBY</div>
                 <br />
-                <div className="main-content-item-tech-major">VUE</div>
+                <div className="main-content-item-tech-major">
+                  <b>VUE</b>
+                </div>
                 <div className="main-content-item-tech-major">NODE</div>
                 <div className="main-content-item-tech-major">EXPRESS</div>
                 <div className="main-content-item-cloud">HEROKU</div>
@@ -418,7 +423,7 @@ function App() {
                 <div className="main-content-item-tech-major">VUE</div>
                 <div className="main-content-item-tech-major">NODE</div>
                 <div className="main-content-item-tech-major">EXPRESS</div>
-                <div className="main-content-item-tech-major">DOCKER</div>
+                <div className="main-content-item-container">DOCKER</div>
                 <div className="main-content-item-cloud">HEROKU</div>
                 <br />
                 <div className="main-content-item-github">
@@ -431,13 +436,18 @@ function App() {
                 </div>
                 <div className="main-content-item-descr">
                   This is my first deployed application leveraging&nbsp;
-                  <a href="https://www.docker.com/">Docker.js</a>. This project
+                  <a href="https://www.docker.com/">Docker</a>. This project
                   contains a Dockerfile which is built into a Docker Image
-                  containing the source-code for the simple web application. On
-                  the localhost, We would create and start a container based on
-                  the Image which would then be viewable on port 3000. Deploying
-                  the Docker-based project to Heroku, however, just required the
-                  Image to be uploaded to the Heroku Image Repository.
+                  (using <b>docker build</b>) containing the source-code for the
+                  simple web application. To view it on localhost, use the{" "}
+                  <b>docker run</b> command on the Image to create a running
+                  container which is then viewable on port 3000. Deploying this
+                  to Docker required building the Image and uploading it to
+                  Heroku as per{" "}
+                  <a href="https://devcenter.heroku.com/articles/container-registry-and-runtime">
+                    these instructions
+                  </a>
+                  .
                 </div>
               </div>
 

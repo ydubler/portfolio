@@ -142,6 +142,19 @@ body {
   font-size: 13px;
 }
 
+.main-content-item-container {
+  border-left: solid 5px white;
+  border-right: solid 5px white;
+  display: inline-block;
+  padding: 10px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  background-color: #00b88a;
+  color: white;
+  font-size: 13px;
+}
+
 .main-content-item-cloud {
   border-left: solid 5px white;
   border-right: solid 5px white;

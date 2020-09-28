@@ -1,46 +1,22 @@
-"use strict";
-
-var _react = _interopRequireDefault(require("react"));
-
-var _server = _interopRequireDefault(require("react-dom/server"));
-
-var _express = _interopRequireDefault(require("express"));
-
-require("ignore-styles");
-
-var _fs = _interopRequireDefault(require("fs"));
-
-var _App = _interopRequireDefault(require("./app/App"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-
-// to ignore CSS files when importing components
+"use strict";var _react=_interopRequireDefault(require("react"));var _server=_interopRequireDefault(require("react-dom/server"));var _express=_interopRequireDefault(require("express"));var _aphrodite=require("aphrodite");require("ignore-styles");var _fs=_interopRequireDefault(require("fs"));var _App=_interopRequireDefault(require("./app/App"));var _SidebarView=_interopRequireDefault(require("./app/front-end-components/SidebarView"));var _NavbarView=_interopRequireDefault(require("./app/front-end-components/NavbarView"));function _interopRequireDefault(obj){return obj&&obj.__esModule?obj:{"default":obj};}// to ignore CSS files when importing components
 // To use streams
 // React Components
 // Stream ??
 //import { Stream } from "stream";
 // Get the port
-var PORT = process.env.PORT || 3000; // Create express server
-
-var server = (0, _express["default"])(); // Set up server properties
-
-server.use("/dist", _express["default"]["static"]("dist/")); // Tell express that when it sees /public make it translate go to the appropriate folder
-
-var pathToPublic = __dirname.substring(0, __dirname.length - 4) + "/public";
-server.use("/public", _express["default"]["static"](pathToPublic)); // Send neccessary files server->client
-
-server.get("/public/images/:id", function (req, res) {
-  // log the activity to the server console
-  console.log('server.get("/public/images/:id") [html request]'); //res.sendFile(__dirname + "/public/" + req.params.id);
-
-  res.sendFile("/public/images/" + req.params.id);
-}); // Getting "/experience"
-
-server.get("/", function (req, res) {
-  console.log("get request to /");
-
-  var HTML = _server["default"].renderToString( /*#__PURE__*/_react["default"].createElement(_react["default"].Fragment, null, /*#__PURE__*/_react["default"].createElement(_App["default"], null)));
-
-  res.send("\n  <html>\n  <head>\n  <title>SSR React App</title>\n  </head>\n  <body style=\"margin:0px;font-family:Helvetica Neue\" id=\"body\">\n  <div id=\"mountnode\">".concat(HTML, "</div>\n  <script src=\"../dist/main.js\"></script>\n  </body>\n  </html>\n  "));
-});
-server.listen(PORT, console.log("Server on."));
+var PORT=process.env.PORT||3000;// Create express server
+var server=(0,_express["default"])();// Set up server properties
+server.use("/dist",_express["default"]["static"]("dist/"));// Tell express that when it sees /public make it translate go to the appropriate folder
+var pathToPublic=__dirname.substring(0,__dirname.length-4)+"/public";server.use("/public",_express["default"]["static"](pathToPublic));// Send neccessary files server->client
+server.get("/public/images/:id",function(req,res){// log the activity to the server console
+console.log('server.get("/public/images/:id") [html request]');//res.sendFile(__dirname + "/public/" + req.params.id);
+res.sendFile("/public/images/"+req.params.id);});// Send neccessary files server->client
+server.get("/public/fonts/:id",function(req,res){// log the activity to the server console
+console.log('server.get("/public/fonts/:id") [html request]');//res.sendFile(__dirname + "/public/" + req.params.id);
+res.sendFile("/public/fonts/"+req.params.id);});// Getting "/"
+server.get("/",function(req,res){console.log("get request to /");var HTML=_server["default"].renderToString(/*#__PURE__*/_react["default"].createElement(_react["default"].Fragment,null,/*#__PURE__*/_react["default"].createElement(_App["default"],null)));res.send("\n  <html>\n    <head>\n      <title>Yuri Dubler's Portfolio</title>\n      <meta name=\"charset\" content=\"utf-8\" />\n      <meta name=\"viewport\" content=\"width=device-width, height=device-height, initial-scale=1, minimum-scale=1, maximum-scale=1.1\">\n      <meta name=\"author\" content=\"Yuri Dubler\" />\n      <meta name=\"description\" content=\"Yuri Dubler's Portfolio\" />\n      <link href=\"https://fonts.googleapis.com/css2?family=Fascinate+Inline&family=Lobster+Two&family=Open+Sans&display=swap\" rel=\"stylesheet\">\n      <link href=\"https://fonts.googleapis.com/css2?family=Fondamento&display=swap\" rel=\"stylesheet\">\n      <link href=\"https://fonts.googleapis.com/css2?family=Galada&family=Montserrat&display=swap\" rel=\"stylesheet\">\n    </head>\n    <body style=\"margin:0px;font-family:Helvetica Neue\" id=\"body\">\n      <div id=\"mountnode\">".concat(HTML,"</div>\n      <script src=\"../dist/main.js\"></script>\n    </body>\n  </html>\n  "));});server.get("/front-end-components/sidebar",function(req,res){console.log("get request to /");var HTML=_server["default"].renderToString(/*#__PURE__*/_react["default"].createElement(_react["default"].Fragment,null,/*#__PURE__*/_react["default"].createElement(_SidebarView["default"],null)));res.send("\n  <html>\n  <head>\n  <title>Yuri Dubler's Portfolio</title>\n  <meta name=\"charset\" content=\"utf-8\" />\n  <meta name=\"viewport\" content=\"width=device-width, height=device-height, initial-scale=1, minimum-scale=1, maximum-scale=1.1\">\n  \n  <meta name=\"author\" content=\"Yuri Dubler\" />\n  <meta name=\"description\" content=\"Yuri Dubler's Portfolio\" />\n  <link href=\"https://fonts.googleapis.com/css2?family=Fascinate+Inline&family=Lobster+Two&family=Open+Sans&display=swap\" rel=\"stylesheet\">\n  <link href=\"https://fonts.googleapis.com/css2?family=Fondamento&display=swap\" rel=\"stylesheet\">\n  <link href=\"https://fonts.googleapis.com/css2?family=Galada&family=Montserrat&display=swap\" rel=\"stylesheet\">\n  </head>\n  <body style=\"margin:0px;font-family:Helvetica Neue\" id=\"body\">\n  <div id=\"mountnode\">".concat(HTML,"</div>\n  <script src=\"../dist/main.js\"></script>\n  </body>\n  </html>\n  "));});// GET REQUEST
+server.get("/lol",function(req,res){// log the activity to the server console
+console.log('server.get("/") [html request]');// Incorporate Aphrodite's StyleSheetServer.renderStatic() function into the standard ReactDomServer function
+var _StyleSheetServer$ren=_aphrodite.StyleSheetServer.renderStatic(function(){// return ReactDOMServer.renderToString(<NavBar />);
+return _server["default"].renderToString(/*#__PURE__*/_react["default"].createElement(_react["default"].Fragment,null));}),html=_StyleSheetServer$ren.html,css=_StyleSheetServer$ren.css;// Send the response, injecting the css content into the head and html into the body
+res.send("\n\t\t<html>\n\t\t\t<head>\n\t\t\t\t<title>SSR React App</title>\n            \t<style data-aphrodite>".concat(css.content,"</style>\n        \t</head>\n\t\t\t<body>\n\t\t\t\t<div id=\"mountnode\">").concat(html,"</div>\n\t\t\t\t<script src=\"/main.js\"></script>\n\t\t\t</body>\n\t\t</html>\n\t"));});server.get("/front-end-components/navbar",function(req,res){console.log("get request to /");var _StyleSheetServer$ren2=_aphrodite.StyleSheetServer.renderStatic(function(){return _server["default"].renderToString(/*#__PURE__*/_react["default"].createElement(_NavbarView["default"],null));}),HTML=_StyleSheetServer$ren2.HTML,CSS=_StyleSheetServer$ren2.CSS;res.send("\n  <html>\n    <head>\n      <title>Yuri Dubler's Portfolio</title>\n      <meta name=\"charset\" content=\"utf-8\" />\n      <meta name=\"viewport\" content=\"width=device-width, height=device-height, initial-scale=1, minimum-scale=1, maximum-scale=1.1\">\n      <meta name=\"author\" content=\"Yuri Dubler\" />\n      <meta name=\"description\" content=\"Yuri Dubler's Portfolio\" />\n      <style data-aphrodite>".concat(CSS,"</style>\n      <link href=\"https://fonts.googleapis.com/css2?family=Fascinate+Inline&family=Lobster+Two&family=Open+Sans&display=swap\" rel=\"stylesheet\">\n      <link href=\"https://fonts.googleapis.com/css2?family=Fondamento&display=swap\" rel=\"stylesheet\">\n      <link href=\"https://fonts.googleapis.com/css2?family=Galada&family=Montserrat&display=swap\" rel=\"stylesheet\">\n    </head>\n    <body style=\"margin:0px;font-family:Helvetica Neue\" id=\"body\">\n      <div id=\"mountnode\">").concat(HTML,"</div>\n      <script src=\"../dist/main.js\"></script>\n    </body>\n  </html>\n  "));});server.listen(PORT,console.log("Server on."));
